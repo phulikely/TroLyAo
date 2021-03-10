@@ -16,7 +16,7 @@ class Gui(QWidget):
 
     def initUI(self):
         # Background
-        self.setWindowIcon(QtGui.QIcon("bot.png"))
+        self.setWindowIcon(QtGui.QIcon("bot.ico"))
         self.setFixedSize(800, 600)
         self.setWindowFlags(QtCore.Qt.WindowCloseButtonHint | QtCore.Qt.WindowMinimizeButtonHint)
         font = QtGui.QFont()

@@ -10,7 +10,7 @@ from gtts import gTTS
 import wikipedia
 import requests
 from selenium import webdriver
-import chromedriver_binary
+from webdriver_manager.chrome import ChromeDriverManager
 from textblob import TextBlob
 
 # My import
@@ -56,7 +56,8 @@ def play_music():
 	ans = utils.hear()
 	print(const.TLA_YOU_RESP + ans)
 	utils.speak(const.TLA_BOT_PLAY_MUSIC)
-	driver = webdriver.Chrome()
+	#driver = webdriver.Chrome()
+	driver = webdriver.Chrome(ChromeDriverManager().install())
 	driver.get(const.TLA_YOUTUBE_LINK_SEARCH + ans)
 	driver.find_element_by_id(const.TLA_YOUTUBE_FIRST_VIDEO).click()
 	time.sleep(10)
@@ -65,7 +66,8 @@ def play_music():
 def googling(query):
 	query = query.replace(const.TLA_LOOKING_FOR, const.TLA_OUTPUT_EMPTY_STR)
 	utils.speak(const.TLA_BOT_GOOGLE_SEARCHING)
-	driver = webdriver.Chrome()
+	#driver = webdriver.Chrome()
+	driver = webdriver.Chrome(ChromeDriverManager().install())
 	driver.implicitly_wait(10)
 	driver.maximize_window()
 	driver.get(const.TLA_GOOGLE_LINK)
