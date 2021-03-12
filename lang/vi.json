@@ -52,5 +52,9 @@
   "TLA_BOT_WIKI_FOUND": "Theo thông tin từ Wikipedia : ",
   "TLA_BOT_WIKI_NOT_FOUND": "Wikipedia chưa có thông tin này. Anh thử nhập tiếng việt có dấu được không ? ",
   "TLA_BOT_GOOGLE_SEARCHING": "Để em tìm trên google...\n",
-  "TLA_WEATHER_CITY": "Anh muốn biết thời tiết của thành phố nào ?"
+  "TLA_WEATHER_CITY": "Anh muốn biết thời tiết của thành phố nào ?",
+  "TLA_BOT_YOUTUBE_NOT_FOUND": "Không tìm được thông tin trên Youtube",
+  "TLA_BOT_GOOGLE_NOT_FOUND": "Không tìm được thông tin trên Google",
+  "TLA_BOT_CHANGE_LANG": ["tiếng Việt", "vietnamese", "ベトナム語"],
+  "TLA_BOT_CHANGE_LANG_OK": "Đã đổi sang tiếng việt. Anh cần em giúp gì ạ ?" 
 }

@@ -52,5 +52,9 @@
   "TLA_BOT_WIKI_FOUND": "次のウィキペディア",
   "TLA_BOT_WIKI_NOT_FOUND": "ウィキペディアでそれについて何も見つけることができません。",
   "TLA_BOT_GOOGLE_SEARCHING": "グーグルでチェックしてみよう...\n",
-  "TLA_WEATHER_CITY": "都市名を教えてください。"
+  "TLA_WEATHER_CITY": "都市名を教えてください。",
+  "TLA_BOT_YOUTUBE_NOT_FOUND": "Youtubeでそれについて何も見つけることができません。",
+  "TLA_BOT_GOOGLE_NOT_FOUND": "Googleでそれについて何も見つけることができません。",
+  "TLA_BOT_CHANGE_LANG": ["tiếng Nhật", "japanese", "日本語"],
+  "TLA_BOT_CHANGE_LANG_OK": "言語を英語に正常に変更しました。 なんでしょう ？"
 }

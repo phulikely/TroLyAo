@@ -24,9 +24,9 @@ import utils
 # chrome_path = "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s"
 now = datetime.datetime.now()
 data_json = None
-# logging.basicConfig(filename='output_log.log', encoding='utf-8', level=logging.DEBUG, format='%(asctime)s %(message)s')
-FORMAT = '%(asctime)-15s %(clientip)s %(user)-8s %(message)s'
-logging.basicConfig(format=FORMAT)
+gl_lang = 'vi'
+logging.basicConfig(filename='output_log.log', encoding='utf-8', level=logging.DEBUG, format='%(asctime)s %(message)s')
+
 # Say greetings depending time in day
 def greeting(lang):
 	hour = int(datetime.datetime.now().hour)
@@ -128,7 +128,6 @@ def show_weather(lang):
 			utils.speak(data_json["TLA_WEATHER_CITY"], lang)
 			city = utils.hear(lang)
 			print(city)
-			logging.info(city)
 			try:
 				call_url = const.TLA_WEATHER_URL \
 							+ const.TLA_WEATHER_API_ID \
@@ -145,7 +144,6 @@ def show_weather(lang):
 					moTa = utils.translate(moTa, lang)
 					content = data_json["TLA_WEATHER_MSG"].format(query=city, temp=nhietDo, humidity=doAm, description=moTa)
 					print(content)
-					logging(content)
 					utils.speak(content, lang)
 				else:
 					content = data_json["TLA_WEATHER_NOT_FOUND"]
@@ -192,21 +190,31 @@ def get_lang(ix):
 		lang = setting.TLA_JP
 	else:
 		lang = setting.TLA_VN
+	
+	lang_load_json(lang)
+	return lang
 
+def lang_load_json(lang):
 	f = open (f"lang\\{lang}.json", encoding=setting.TLA_UTF8)
 	global data_json
 	data_json = json.load(f)
 
-	return lang
 
 # Bot
 def bot(ix=0):
+	global gl_lang
 	utils.clear_promp()
 	lang = get_lang(ix)
 
 	greeting(lang)
 	while True:
-		query = utils.hear(lang).lower()
+		query = utils.hear(gl_lang).lower()
+
+		
+
+
+
+
 		if data_json["TLA_WHO"] in query or data_json["TLA_WHAT"] in query or data_json["TLA_WHERE"] in query:
 			find_in_wiki(query, lang)
 		elif data_json["TLA_MUSIC"] in query:
@@ -232,14 +240,27 @@ def bot(ix=0):
 			break
 		elif query == data_json["TLA_BOT_MIC_NG"]:
 			break
-		elif 'tiếng nhật' in query or 'japanese' in query or '日本語' in query:
-			lang = get_lang(1)
-			utils.speak(data_json["TLA_BOT_CHANGE_LANG_OK"], lang)
-		elif 'tiếng anh' in query or 'english' in query or '英語' in query:
-			lang = get_lang(0)
-			utils.speak(data_json["TLA_BOT_CHANGE_LANG_OK"], lang)
-		elif 'tiếng việt' in query or 'vietnamese' in query or 'ベトナム語' in query:
-			lang = get_lang(2)
-			utils.speak(data_json["TLA_BOT_CHANGE_LANG_OK"], lang)
+		elif 2 > 1:
+			logging.info(f"hahahahahahaahahah")
+			answer = query
+			try:
+				lang_dec = detect(answer)
+			except:
+				pass
+			if lang_dec in ['vi', 'en', 'ja']:
+				logging.info(f"heheheheheeheheh:{lang_dec}")
+				lang_load_json(lang_dec)
+				gl_lang = lang_dec
+				utils.speak(data_json["TLA_BOT_CHANGE_LANG_OK"],gl_lang)
+
+		# elif 'tiếng nhật' in query or 'japanese' in query or '日本語' in query:
+		# 	lang = get_lang(1)
+		# 	utils.speak(data_json["TLA_BOT_CHANGE_LANG_OK"], lang)
+		# elif 'tiếng anh' in query or 'english' in query or '英語' in query:
+		# 	lang = get_lang(0)
+		# 	utils.speak(data_json["TLA_BOT_CHANGE_LANG_OK"], lang)
+		# elif 'tiếng việt' in query or 'vietnamese' in query or 'ベトナム語' in query:
+		# 	lang = get_lang(2)
+		# 	utils.speak(data_json["TLA_BOT_CHANGE_LANG_OK"], lang)
 		else:
 			utils.speak(data_json["TLA_BOT_RESP_OTHER"], lang)

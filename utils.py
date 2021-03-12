@@ -7,6 +7,7 @@ import setting
 import const
 import playsound
 import json
+import logging
 
 
 # Clear promp
@@ -41,20 +42,26 @@ def hear(lang):
 			query = bot_ear.recognize_google(audio, language=lang)
 			print(f"You : {query}\n")
 		except:
-			print(data_json["TLA_BOT_CAN_NOT_HEAR"])  
+			print(data_json["TLA_BOT_CAN_NOT_HEAR"])
+			logging.error(data_json["TLA_BOT_CAN_NOT_HEAR"])
 			return ""
 	except:
-
 		speak(data_json["TLA_BOT_MIC_NG"], lang)
-		print(data_json["TLA_BOT_MIC_NG"])
+		#print(data_json["TLA_BOT_MIC_NG"])
+		logging.error(data_json["TLA_BOT_MIC_NG"])
 		return data_json["TLA_BOT_MIC_NG"]
 	#query = input(const.TLA_BOT_CHAT)
 	return query
 
 # Text to speech
 def speak(text, lang):
-	output = gTTS(text=text, lang=lang, slow=False)
-	tempFile = const.TLA_OUTPUT_MP3
-	output.save(tempFile)
-	playsound.playsound(tempFile)
-	os.remove(tempFile)
+	try:
+		output = gTTS(text=text, lang=lang, slow=False)
+		tempFile = const.TLA_OUTPUT_MP3
+		output.save(tempFile)
+		playsound.playsound(tempFile)
+		os.remove(tempFile)
+	except sr.UnknownValueError as err_gtts:
+		logging.error(err_gtts)
+	except sr.RequestError as err_req:
+		logging.error(err_req)

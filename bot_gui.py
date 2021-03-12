@@ -93,6 +93,7 @@ class Worker(QObject):
         bot.bot(cbb_index)
 
         self.finished.emit()  # emit the finished signal when the loop is done
+        QCoreApplication.quit()
 
     def stop(self):
         bot.run = False  # set the run condition to false on stop

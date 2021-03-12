@@ -52,5 +52,9 @@
   "TLA_BOT_WIKI_FOUND": "As Wikipedia : ",
   "TLA_BOT_WIKI_NOT_FOUND": "Can not find out anything about that in Wikipedia.",
   "TLA_BOT_GOOGLE_SEARCHING": "Let's me check at Google...\n",
-  "TLA_WEATHER_CITY": "Let me know the city name"
+  "TLA_WEATHER_CITY": "Let me know the city name",
+  "TLA_BOT_YOUTUBE_NOT_FOUND": "Can not find out anything about that in Youtube",
+  "TLA_BOT_GOOGLE_NOT_FOUND": "Can not find out anything about that in Google",
+  "TLA_BOT_CHANGE_LANG": ["tiếng Anh", "english", "英語"],
+  "TLA_BOT_CHANGE_LANG_OK": "Changed language to english successfully. What do you want ?"
 }
