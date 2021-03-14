@@ -14,7 +14,6 @@ import requests
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from textblob import TextBlob
-from langdetect import detect
 
 # My import
 import const
@@ -24,9 +23,7 @@ import utils
 # chrome_path = "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s"
 now = datetime.datetime.now()
 data_json = None
-# logging.basicConfig(filename='output_log.log', encoding='utf-8', level=logging.DEBUG, format='%(asctime)s %(message)s')
-FORMAT = '%(asctime)-15s %(clientip)s %(user)-8s %(message)s'
-logging.basicConfig(format=FORMAT)
+logging.basicConfig(filename='output_log.log', encoding='utf-8', level=logging.DEBUG, format='%(asctime)s %(message)s')
 # Say greetings depending time in day
 def greeting(lang):
 	hour = int(datetime.datetime.now().hour)
@@ -104,7 +101,7 @@ def googling(query, lang):
 def resp_heal(lang):
 	utils.speak(data_json["TLA_BOT_RESP_HEALTH"], lang)
 	ans = utils.hear(lang)
-	print(data_json["TLA_YOU_RESP"] + ans)
+	print(const.TLA_YOU_RESP + ans)
 	blob = TextBlob(ans)
 	if blob.polarity > 0:
 		utils.speak(data_json["TLA_YOU_RESP_HEALTH_GOOD"], lang)
@@ -145,7 +142,7 @@ def show_weather(lang):
 					moTa = utils.translate(moTa, lang)
 					content = data_json["TLA_WEATHER_MSG"].format(query=city, temp=nhietDo, humidity=doAm, description=moTa)
 					print(content)
-					logging(content)
+					logging.info(content)
 					utils.speak(content, lang)
 				else:
 					content = data_json["TLA_WEATHER_NOT_FOUND"]
@@ -243,3 +240,4 @@ def bot(ix=0):
 			utils.speak(data_json["TLA_BOT_CHANGE_LANG_OK"], lang)
 		else:
 			utils.speak(data_json["TLA_BOT_RESP_OTHER"], lang)
+bot()

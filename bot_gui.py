@@ -4,6 +4,8 @@ from PyQt5.QtWidgets import (QLabel, QWidget,
                              QPushButton, QApplication, QComboBox)
 from PyQt5.QtCore import QCoreApplication, QThread, QObject, pyqtSignal
 import bot
+# from PyInstaller.utils.hooks import collect_data_files
+# datas_json = collect_data_files('lang')
 
 cbb_index = 0
 class Gui(QWidget):
