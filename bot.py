@@ -240,4 +240,3 @@ def bot(ix=0):
 			utils.speak(data_json["TLA_BOT_CHANGE_LANG_OK"], lang)
 		else:
 			utils.speak(data_json["TLA_BOT_RESP_OTHER"], lang)
-bot()
