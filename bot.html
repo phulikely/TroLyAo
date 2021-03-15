@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module bot</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>bot</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cphu%5Cpython%5Ctrolyao_exe%5Cbot.py">c:\phu\python\trolyao_exe\bot.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;System&nbsp;basic&nbsp;lib</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="const.html">const</a><br>
+<a href="ctypes.html">ctypes</a><br>
+<a href="datetime.html">datetime</a><br>
+<a href="gtts.html">gtts</a><br>
+</td><td width="25%" valign=top><a href="json.html">json</a><br>
+<a href="logging.html">logging</a><br>
+<a href="os.html">os</a><br>
+<a href="requests.html">requests</a><br>
+</td><td width="25%" valign=top><a href="setting.html">setting</a><br>
+<a href="time.html">time</a><br>
+<a href="utils.html">utils</a><br>
+<a href="selenium.webdriver.html">selenium.webdriver</a><br>
+</td><td width="25%" valign=top><a href="wikipedia.html">wikipedia</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-bot"><strong>bot</strong></a>(ix=0)</dt><dd><tt>Bot&nbsp;actions<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ix&nbsp;(int,&nbsp;optional):&nbsp;[0:&nbsp;english,&nbsp;&nbsp;1:&nbsp;japanese,&nbsp;&nbsp;2:&nbsp;vietnamese].&nbsp;Defaults&nbsp;is&nbsp;english(index&nbsp;=&nbsp;0)</tt></dd></dl>
+ <dl><dt><a name="-find_in_wiki"><strong>find_in_wiki</strong></a>(query, lang)</dt><dd><tt>Looking&nbsp;for&nbsp;information&nbsp;in&nbsp;Wikipedia<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;query&nbsp;([string]):&nbsp;[The&nbsp;keyword&nbsp;which&nbsp;will&nbsp;be&nbsp;used&nbsp;for&nbsp;searching&nbsp;in&nbsp;Wikipedia]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lang&nbsp;([string]):&nbsp;[natural&nbsp;language]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'en'&nbsp;:&nbsp;english<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'vi'&nbsp;:&nbsp;vietnamese<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'ja'&nbsp;:&nbsp;japanese</tt></dd></dl>
+ <dl><dt><a name="-get_lang"><strong>get_lang</strong></a>(ix)</dt><dd><tt>Get&nbsp;lang&nbsp;and&nbsp;choose&nbsp;json&nbsp;file&nbsp;depending&nbsp;choson&nbsp;lang<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ix&nbsp;([integer]):&nbsp;[index&nbsp;of&nbsp;natural&nbsp;lang]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'en'&nbsp;:&nbsp;0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'vi'&nbsp;:&nbsp;2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'ja'&nbsp;:&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[string]:&nbsp;[natural&nbsp;lang]</tt></dd></dl>
+ <dl><dt><a name="-googling"><strong>googling</strong></a>(query, lang)</dt><dd><tt>Looking&nbsp;for&nbsp;information&nbsp;on&nbsp;Google<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;query&nbsp;([string]):&nbsp;[The&nbsp;keyword&nbsp;which&nbsp;will&nbsp;be&nbsp;used&nbsp;for&nbsp;searching&nbsp;in&nbsp;Google]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lang&nbsp;([string]):&nbsp;[natural&nbsp;language]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'en'&nbsp;:&nbsp;english<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'vi'&nbsp;:&nbsp;vietnamese<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'ja'&nbsp;:&nbsp;japanese</tt></dd></dl>
+ <dl><dt><a name="-greeting"><strong>greeting</strong></a>(lang)</dt><dd><tt>Say&nbsp;greetings&nbsp;depending&nbsp;time&nbsp;in&nbsp;day<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lang&nbsp;([string]):&nbsp;[natural&nbsp;language]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'en'&nbsp;:&nbsp;english<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'vi'&nbsp;:&nbsp;vietnamese<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'ja'&nbsp;:&nbsp;japanese</tt></dd></dl>
+ <dl><dt><a name="-lock_pc"><strong>lock_pc</strong></a>(lang)</dt><dd><tt>Lock&nbsp;PC<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lang&nbsp;([string]):&nbsp;[natural&nbsp;language]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'en'&nbsp;:&nbsp;english<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'vi'&nbsp;:&nbsp;vietnamese<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'ja'&nbsp;:&nbsp;japanese</tt></dd></dl>
+ <dl><dt><a name="-play_music"><strong>play_music</strong></a>(lang)</dt><dd><tt>Play&nbsp;music&nbsp;on&nbsp;Youtube<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lang&nbsp;([string]):&nbsp;[natural&nbsp;language]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'en'&nbsp;:&nbsp;english<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'vi'&nbsp;:&nbsp;vietnamese<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'ja'&nbsp;:&nbsp;japanese</tt></dd></dl>
+ <dl><dt><a name="-resp_heal"><strong>resp_heal</strong></a>(lang)</dt><dd><tt>Response&nbsp;relating&nbsp;health<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lang&nbsp;([string]):&nbsp;[natural&nbsp;language]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'en'&nbsp;:&nbsp;english<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'vi'&nbsp;:&nbsp;vietnamese<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'ja'&nbsp;:&nbsp;japanese</tt></dd></dl>
+ <dl><dt><a name="-show_date_time"><strong>show_date_time</strong></a>(query, lang)</dt><dd><tt>Show&nbsp;date&nbsp;time<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;query&nbsp;([string]):&nbsp;[The&nbsp;sentence&nbsp;which&nbsp;including&nbsp;'time'&nbsp;or&nbsp;'date']<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lang&nbsp;([string]):&nbsp;[natural&nbsp;language]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'en'&nbsp;:&nbsp;english<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'vi'&nbsp;:&nbsp;vietnamese<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'ja'&nbsp;:&nbsp;japanese</tt></dd></dl>
+ <dl><dt><a name="-show_weather"><strong>show_weather</strong></a>(lang)</dt><dd><tt>Show&nbsp;weather<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lang&nbsp;([string]):&nbsp;[natural&nbsp;language]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'en'&nbsp;:&nbsp;english<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'vi'&nbsp;:&nbsp;vietnamese<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'ja'&nbsp;:&nbsp;japanese</tt></dd></dl>
+ <dl><dt><a name="-shutdown_pc"><strong>shutdown_pc</strong></a>(lang)</dt><dd><tt>Shutdown&nbsp;PC<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lang&nbsp;([string]):&nbsp;[natural&nbsp;language]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'en'&nbsp;:&nbsp;english<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'vi'&nbsp;:&nbsp;vietnamese<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'ja'&nbsp;:&nbsp;japanese</tt></dd></dl>
+ <dl><dt><a name="-write_sth"><strong>write_sth</strong></a>(lang)</dt><dd><tt>Write&nbsp;something<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lang&nbsp;([string]):&nbsp;[natural&nbsp;language]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'en'&nbsp;:&nbsp;english<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'vi'&nbsp;:&nbsp;vietnamese<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'ja'&nbsp;:&nbsp;japanese</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>data_json</strong> = None<br>
+<strong>now</strong> = datetime.datetime(2021, 3, 15, 10, 38, 16, 986829)</td></tr></table>
+</body></html>

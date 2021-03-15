@@ -10,23 +10,41 @@ import json
 import logging
 
 
-# Clear promp
 def clear_promp():
+	"""Clear promp
+	"""
 	if sys.platform == 'win32':
 		clear = lambda: os.system('cls')
 	else:
 		clear = lambda: os.system('clear')
-	# Clear promp
 	clear()
 
-# Translate English to Vietnamese
 def translate(text_source, text_dest):
-    translator = Translator()
-    result = (translator.translate(text_source, src=setting.TLA_ENG, dest=text_dest)).text
-    return result
+	"""Translate from source language to destination language
 
-# Bot hear your voice
+	Args:
+		text_source ([string]): [source language]
+		text_dest ([string]): [destination language]
+
+	Returns:
+		[string]: [destination language]
+	"""
+	translator = Translator()
+	result = (translator.translate(text_source, src=setting.TLA_ENG, dest=text_dest)).text
+	return result
+
 def hear(lang):
+	"""Bot hear your voice
+
+	Args:
+		lang ([string]): [natural language]
+		'en' : english
+		'vi' : vietnamese
+		'ja' : japanese	
+
+	Returns:
+		[string]: [your voice now is text]
+	"""
 	f = open (f"lang\\{lang}.json", encoding=setting.TLA_UTF8)
 	data_json = json.load(f)
 	try:
@@ -53,8 +71,16 @@ def hear(lang):
 	#query = input(const.TLA_BOT_CHAT)
 	return query
 
-# Text to speech
 def speak(text, lang):
+	"""Text to speech
+
+	Args:
+		text ([string]): [text which will be speaked]
+		lang ([string]): [natural language]
+		'en' : english
+		'vi' : vietnamese
+		'ja' : japanese	
+	"""
 	try:
 		output = gTTS(text=text, lang=lang, slow=False)
 		tempFile = const.TLA_OUTPUT_MP3

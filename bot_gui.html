@@ -1,0 +1,947 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module bot_gui</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>bot_gui</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cphu%5Cpython%5Ctrolyao_exe%5Cbot_gui.py">c:\phu\python\trolyao_exe\bot_gui.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="PyQt5.QtCore.html">PyQt5.QtCore</a><br>
+<a href="PyQt5.QtGui.html">PyQt5.QtGui</a><br>
+</td><td width="25%" valign=top><a href="PyQt5.QtWidgets.html">PyQt5.QtWidgets</a><br>
+<a href="bot.html">bot</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a>(<a href="PyQt5.sip.html#wrapper">sip.wrapper</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="bot_gui.html#Worker">Worker</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="PyQt5.QtWidgets.html#QWidget">PyQt5.QtWidgets.QWidget</a>(<a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a>, <a href="PyQt5.QtGui.html#QPaintDevice">PyQt5.QtGui.QPaintDevice</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="bot_gui.html#Gui">Gui</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Gui">class <strong>Gui</strong></a>(<a href="PyQt5.QtWidgets.html#QWidget">PyQt5.QtWidgets.QWidget</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Build&nbsp;gui<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>&nbsp;([qwidget]):&nbsp;[PyQt5]<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="bot_gui.html#Gui">Gui</a></dd>
+<dd><a href="PyQt5.QtWidgets.html#QWidget">PyQt5.QtWidgets.QWidget</a></dd>
+<dd><a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a></dd>
+<dd><a href="PyQt5.sip.html#wrapper">sip.wrapper</a></dd>
+<dd><a href="PyQt5.QtGui.html#QPaintDevice">PyQt5.QtGui.QPaintDevice</a></dd>
+<dd><a href="PyQt5.sip.html#simplewrapper">sip.simplewrapper</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Gui-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>creating&nbsp;summary&nbsp;for&nbsp;__init__</tt></dd></dl>
+
+<dl><dt><a name="Gui-initUI"><strong>initUI</strong></a>(self)</dt><dd><tt>creating&nbsp;summary&nbsp;for&nbsp;initUI</tt></dd></dl>
+
+<dl><dt><a name="Gui-on_combobox_changed"><strong>on_combobox_changed</strong></a>(self)</dt><dd><tt>event&nbsp;for&nbsp;on_combobox_changed</tt></dd></dl>
+
+<strong>stop_signal</strong> = &lt;unbound PYQT_SIGNAL stop_signal()&gt;
+<dl><dt><a name="Gui-stop_thread"><strong>stop_thread</strong></a>(self)</dt><dd><tt>Stop&nbsp;threading</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="PyQt5.QtWidgets.html#QWidget">PyQt5.QtWidgets.QWidget</a>:<br>
+<dl><dt><a name="Gui-acceptDrops"><strong>acceptDrops</strong></a>(...)</dt><dd><tt><a href="#Gui-acceptDrops">acceptDrops</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-accessibleDescription"><strong>accessibleDescription</strong></a>(...)</dt><dd><tt><a href="#Gui-accessibleDescription">accessibleDescription</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Gui-accessibleName"><strong>accessibleName</strong></a>(...)</dt><dd><tt><a href="#Gui-accessibleName">accessibleName</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Gui-actionEvent"><strong>actionEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-actionEvent">actionEvent</a>(self,&nbsp;QActionEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-actions"><strong>actions</strong></a>(...)</dt><dd><tt><a href="#Gui-actions">actions</a>(self)&nbsp;-&gt;&nbsp;List[QAction]</tt></dd></dl>
+
+<dl><dt><a name="Gui-activateWindow"><strong>activateWindow</strong></a>(...)</dt><dd><tt><a href="#Gui-activateWindow">activateWindow</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-addAction"><strong>addAction</strong></a>(...)</dt><dd><tt><a href="#Gui-addAction">addAction</a>(self,&nbsp;QAction)</tt></dd></dl>
+
+<dl><dt><a name="Gui-addActions"><strong>addActions</strong></a>(...)</dt><dd><tt><a href="#Gui-addActions">addActions</a>(self,&nbsp;Iterable[QAction])</tt></dd></dl>
+
+<dl><dt><a name="Gui-adjustSize"><strong>adjustSize</strong></a>(...)</dt><dd><tt><a href="#Gui-adjustSize">adjustSize</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-autoFillBackground"><strong>autoFillBackground</strong></a>(...)</dt><dd><tt><a href="#Gui-autoFillBackground">autoFillBackground</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-backgroundRole"><strong>backgroundRole</strong></a>(...)</dt><dd><tt><a href="#Gui-backgroundRole">backgroundRole</a>(self)&nbsp;-&gt;&nbsp;QPalette.ColorRole</tt></dd></dl>
+
+<dl><dt><a name="Gui-baseSize"><strong>baseSize</strong></a>(...)</dt><dd><tt><a href="#Gui-baseSize">baseSize</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="Gui-changeEvent"><strong>changeEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-changeEvent">changeEvent</a>(self,&nbsp;QEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-childAt"><strong>childAt</strong></a>(...)</dt><dd><tt><a href="#Gui-childAt">childAt</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a><br>
+<a href="#Gui-childAt">childAt</a>(self,&nbsp;int,&nbsp;int)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Gui-childEvent"><strong>childEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="Gui-childrenRect"><strong>childrenRect</strong></a>(...)</dt><dd><tt><a href="#Gui-childrenRect">childrenRect</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="Gui-childrenRegion"><strong>childrenRegion</strong></a>(...)</dt><dd><tt><a href="#Gui-childrenRegion">childrenRegion</a>(self)&nbsp;-&gt;&nbsp;QRegion</tt></dd></dl>
+
+<dl><dt><a name="Gui-clearFocus"><strong>clearFocus</strong></a>(...)</dt><dd><tt><a href="#Gui-clearFocus">clearFocus</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-clearMask"><strong>clearMask</strong></a>(...)</dt><dd><tt><a href="#Gui-clearMask">clearMask</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-close"><strong>close</strong></a>(...)</dt><dd><tt><a href="#Gui-close">close</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-closeEvent"><strong>closeEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-closeEvent">closeEvent</a>(self,&nbsp;QCloseEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-connectNotify"><strong>connectNotify</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="Gui-contentsMargins"><strong>contentsMargins</strong></a>(...)</dt><dd><tt><a href="#Gui-contentsMargins">contentsMargins</a>(self)&nbsp;-&gt;&nbsp;QMargins</tt></dd></dl>
+
+<dl><dt><a name="Gui-contentsRect"><strong>contentsRect</strong></a>(...)</dt><dd><tt><a href="#Gui-contentsRect">contentsRect</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="Gui-contextMenuEvent"><strong>contextMenuEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-contextMenuEvent">contextMenuEvent</a>(self,&nbsp;QContextMenuEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-contextMenuPolicy"><strong>contextMenuPolicy</strong></a>(...)</dt><dd><tt><a href="#Gui-contextMenuPolicy">contextMenuPolicy</a>(self)&nbsp;-&gt;&nbsp;Qt.ContextMenuPolicy</tt></dd></dl>
+
+<dl><dt><a name="Gui-create"><strong>create</strong></a>(...)</dt><dd><tt><a href="#Gui-create">create</a>(self,&nbsp;window:&nbsp;PyQt5.sip.voidptr&nbsp;=&nbsp;0,&nbsp;initializeWindow:&nbsp;bool&nbsp;=&nbsp;True,&nbsp;destroyOldWindow:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="Gui-createWindowContainer"><strong>createWindowContainer</strong></a>(...)</dt><dd><tt><a href="#Gui-createWindowContainer">createWindowContainer</a>(QWindow,&nbsp;parent:&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>&nbsp;=&nbsp;None,&nbsp;flags:&nbsp;Union[Qt.WindowFlags,&nbsp;Qt.WindowType]&nbsp;=&nbsp;0)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Gui-cursor"><strong>cursor</strong></a>(...)</dt><dd><tt><a href="#Gui-cursor">cursor</a>(self)&nbsp;-&gt;&nbsp;QCursor</tt></dd></dl>
+
+<strong>customContextMenuRequested</strong> = &lt;unbound PYQT_SIGNAL customContextMenuRequested(QPoint)&gt;
+<dl><dt><a name="Gui-customEvent"><strong>customEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="Gui-destroy"><strong>destroy</strong></a>(...)</dt><dd><tt><a href="#Gui-destroy">destroy</a>(self,&nbsp;destroyWindow:&nbsp;bool&nbsp;=&nbsp;True,&nbsp;destroySubWindows:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="Gui-devType"><strong>devType</strong></a>(...)</dt><dd><tt><a href="#Gui-devType">devType</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Gui-disconnectNotify"><strong>disconnectNotify</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="Gui-dragEnterEvent"><strong>dragEnterEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-dragEnterEvent">dragEnterEvent</a>(self,&nbsp;QDragEnterEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-dragLeaveEvent"><strong>dragLeaveEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-dragLeaveEvent">dragLeaveEvent</a>(self,&nbsp;QDragLeaveEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-dragMoveEvent"><strong>dragMoveEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-dragMoveEvent">dragMoveEvent</a>(self,&nbsp;QDragMoveEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-dropEvent"><strong>dropEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-dropEvent">dropEvent</a>(self,&nbsp;QDropEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-effectiveWinId"><strong>effectiveWinId</strong></a>(...)</dt><dd><tt><a href="#Gui-effectiveWinId">effectiveWinId</a>(self)&nbsp;-&gt;&nbsp;PyQt5.sip.voidptr</tt></dd></dl>
+
+<dl><dt><a name="Gui-ensurePolished"><strong>ensurePolished</strong></a>(...)</dt><dd><tt><a href="#Gui-ensurePolished">ensurePolished</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-enterEvent"><strong>enterEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-enterEvent">enterEvent</a>(self,&nbsp;QEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-event"><strong>event</strong></a>(...)</dt><dd><tt><a href="#Gui-event">event</a>(self,&nbsp;QEvent)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-find"><strong>find</strong></a>(...)</dt><dd><tt><a href="#Gui-find">find</a>(PyQt5.sip.voidptr)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Gui-focusInEvent"><strong>focusInEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-focusInEvent">focusInEvent</a>(self,&nbsp;QFocusEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-focusNextChild"><strong>focusNextChild</strong></a>(...)</dt><dd><tt><a href="#Gui-focusNextChild">focusNextChild</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-focusNextPrevChild"><strong>focusNextPrevChild</strong></a>(...)</dt><dd><tt><a href="#Gui-focusNextPrevChild">focusNextPrevChild</a>(self,&nbsp;bool)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-focusOutEvent"><strong>focusOutEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-focusOutEvent">focusOutEvent</a>(self,&nbsp;QFocusEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-focusPolicy"><strong>focusPolicy</strong></a>(...)</dt><dd><tt><a href="#Gui-focusPolicy">focusPolicy</a>(self)&nbsp;-&gt;&nbsp;Qt.FocusPolicy</tt></dd></dl>
+
+<dl><dt><a name="Gui-focusPreviousChild"><strong>focusPreviousChild</strong></a>(...)</dt><dd><tt><a href="#Gui-focusPreviousChild">focusPreviousChild</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-focusProxy"><strong>focusProxy</strong></a>(...)</dt><dd><tt><a href="#Gui-focusProxy">focusProxy</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Gui-focusWidget"><strong>focusWidget</strong></a>(...)</dt><dd><tt><a href="#Gui-focusWidget">focusWidget</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Gui-font"><strong>font</strong></a>(...)</dt><dd><tt><a href="#Gui-font">font</a>(self)&nbsp;-&gt;&nbsp;QFont</tt></dd></dl>
+
+<dl><dt><a name="Gui-fontInfo"><strong>fontInfo</strong></a>(...)</dt><dd><tt><a href="#Gui-fontInfo">fontInfo</a>(self)&nbsp;-&gt;&nbsp;QFontInfo</tt></dd></dl>
+
+<dl><dt><a name="Gui-fontMetrics"><strong>fontMetrics</strong></a>(...)</dt><dd><tt><a href="#Gui-fontMetrics">fontMetrics</a>(self)&nbsp;-&gt;&nbsp;QFontMetrics</tt></dd></dl>
+
+<dl><dt><a name="Gui-foregroundRole"><strong>foregroundRole</strong></a>(...)</dt><dd><tt><a href="#Gui-foregroundRole">foregroundRole</a>(self)&nbsp;-&gt;&nbsp;QPalette.ColorRole</tt></dd></dl>
+
+<dl><dt><a name="Gui-frameGeometry"><strong>frameGeometry</strong></a>(...)</dt><dd><tt><a href="#Gui-frameGeometry">frameGeometry</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="Gui-frameSize"><strong>frameSize</strong></a>(...)</dt><dd><tt><a href="#Gui-frameSize">frameSize</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="Gui-geometry"><strong>geometry</strong></a>(...)</dt><dd><tt><a href="#Gui-geometry">geometry</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="Gui-getContentsMargins"><strong>getContentsMargins</strong></a>(...)</dt><dd><tt><a href="#Gui-getContentsMargins">getContentsMargins</a>(self)&nbsp;-&gt;&nbsp;Tuple[int,&nbsp;int,&nbsp;int,&nbsp;int]</tt></dd></dl>
+
+<dl><dt><a name="Gui-grab"><strong>grab</strong></a>(...)</dt><dd><tt><a href="#Gui-grab">grab</a>(self,&nbsp;rectangle:&nbsp;QRect&nbsp;=&nbsp;QRect(QPoint(0,0),QSize(-1,-1)))&nbsp;-&gt;&nbsp;QPixmap</tt></dd></dl>
+
+<dl><dt><a name="Gui-grabGesture"><strong>grabGesture</strong></a>(...)</dt><dd><tt><a href="#Gui-grabGesture">grabGesture</a>(self,&nbsp;Qt.GestureType,&nbsp;flags:&nbsp;Union[Qt.GestureFlags,&nbsp;Qt.GestureFlag]&nbsp;=&nbsp;Qt.GestureFlags())</tt></dd></dl>
+
+<dl><dt><a name="Gui-grabKeyboard"><strong>grabKeyboard</strong></a>(...)</dt><dd><tt><a href="#Gui-grabKeyboard">grabKeyboard</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-grabMouse"><strong>grabMouse</strong></a>(...)</dt><dd><tt><a href="#Gui-grabMouse">grabMouse</a>(self)<br>
+<a href="#Gui-grabMouse">grabMouse</a>(self,&nbsp;Union[QCursor,&nbsp;Qt.CursorShape])</tt></dd></dl>
+
+<dl><dt><a name="Gui-grabShortcut"><strong>grabShortcut</strong></a>(...)</dt><dd><tt><a href="#Gui-grabShortcut">grabShortcut</a>(self,&nbsp;Union[QKeySequence,&nbsp;QKeySequence.StandardKey,&nbsp;str,&nbsp;int],&nbsp;context:&nbsp;Qt.ShortcutContext&nbsp;=&nbsp;Qt.WindowShortcut)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Gui-graphicsEffect"><strong>graphicsEffect</strong></a>(...)</dt><dd><tt><a href="#Gui-graphicsEffect">graphicsEffect</a>(self)&nbsp;-&gt;&nbsp;QGraphicsEffect</tt></dd></dl>
+
+<dl><dt><a name="Gui-graphicsProxyWidget"><strong>graphicsProxyWidget</strong></a>(...)</dt><dd><tt><a href="#Gui-graphicsProxyWidget">graphicsProxyWidget</a>(self)&nbsp;-&gt;&nbsp;QGraphicsProxyWidget</tt></dd></dl>
+
+<dl><dt><a name="Gui-hasFocus"><strong>hasFocus</strong></a>(...)</dt><dd><tt><a href="#Gui-hasFocus">hasFocus</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-hasHeightForWidth"><strong>hasHeightForWidth</strong></a>(...)</dt><dd><tt><a href="#Gui-hasHeightForWidth">hasHeightForWidth</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-hasMouseTracking"><strong>hasMouseTracking</strong></a>(...)</dt><dd><tt><a href="#Gui-hasMouseTracking">hasMouseTracking</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-hasTabletTracking"><strong>hasTabletTracking</strong></a>(...)</dt><dd><tt><a href="#Gui-hasTabletTracking">hasTabletTracking</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-height"><strong>height</strong></a>(...)</dt><dd><tt><a href="#Gui-height">height</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Gui-heightForWidth"><strong>heightForWidth</strong></a>(...)</dt><dd><tt><a href="#Gui-heightForWidth">heightForWidth</a>(self,&nbsp;int)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Gui-hide"><strong>hide</strong></a>(...)</dt><dd><tt><a href="#Gui-hide">hide</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-hideEvent"><strong>hideEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-hideEvent">hideEvent</a>(self,&nbsp;QHideEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-initPainter"><strong>initPainter</strong></a>(...)</dt><dd><tt><a href="#Gui-initPainter">initPainter</a>(self,&nbsp;QPainter)</tt></dd></dl>
+
+<dl><dt><a name="Gui-inputMethodEvent"><strong>inputMethodEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-inputMethodEvent">inputMethodEvent</a>(self,&nbsp;QInputMethodEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-inputMethodHints"><strong>inputMethodHints</strong></a>(...)</dt><dd><tt><a href="#Gui-inputMethodHints">inputMethodHints</a>(self)&nbsp;-&gt;&nbsp;Qt.InputMethodHints</tt></dd></dl>
+
+<dl><dt><a name="Gui-inputMethodQuery"><strong>inputMethodQuery</strong></a>(...)</dt><dd><tt><a href="#Gui-inputMethodQuery">inputMethodQuery</a>(self,&nbsp;Qt.InputMethodQuery)&nbsp;-&gt;&nbsp;Any</tt></dd></dl>
+
+<dl><dt><a name="Gui-insertAction"><strong>insertAction</strong></a>(...)</dt><dd><tt><a href="#Gui-insertAction">insertAction</a>(self,&nbsp;QAction,&nbsp;QAction)</tt></dd></dl>
+
+<dl><dt><a name="Gui-insertActions"><strong>insertActions</strong></a>(...)</dt><dd><tt><a href="#Gui-insertActions">insertActions</a>(self,&nbsp;QAction,&nbsp;Iterable[QAction])</tt></dd></dl>
+
+<dl><dt><a name="Gui-isActiveWindow"><strong>isActiveWindow</strong></a>(...)</dt><dd><tt><a href="#Gui-isActiveWindow">isActiveWindow</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-isAncestorOf"><strong>isAncestorOf</strong></a>(...)</dt><dd><tt><a href="#Gui-isAncestorOf">isAncestorOf</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-isEnabled"><strong>isEnabled</strong></a>(...)</dt><dd><tt><a href="#Gui-isEnabled">isEnabled</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-isEnabledTo"><strong>isEnabledTo</strong></a>(...)</dt><dd><tt><a href="#Gui-isEnabledTo">isEnabledTo</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-isFullScreen"><strong>isFullScreen</strong></a>(...)</dt><dd><tt><a href="#Gui-isFullScreen">isFullScreen</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-isHidden"><strong>isHidden</strong></a>(...)</dt><dd><tt><a href="#Gui-isHidden">isHidden</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-isLeftToRight"><strong>isLeftToRight</strong></a>(...)</dt><dd><tt><a href="#Gui-isLeftToRight">isLeftToRight</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-isMaximized"><strong>isMaximized</strong></a>(...)</dt><dd><tt><a href="#Gui-isMaximized">isMaximized</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-isMinimized"><strong>isMinimized</strong></a>(...)</dt><dd><tt><a href="#Gui-isMinimized">isMinimized</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-isModal"><strong>isModal</strong></a>(...)</dt><dd><tt><a href="#Gui-isModal">isModal</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-isRightToLeft"><strong>isRightToLeft</strong></a>(...)</dt><dd><tt><a href="#Gui-isRightToLeft">isRightToLeft</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-isSignalConnected"><strong>isSignalConnected</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="Gui-isVisible"><strong>isVisible</strong></a>(...)</dt><dd><tt><a href="#Gui-isVisible">isVisible</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-isVisibleTo"><strong>isVisibleTo</strong></a>(...)</dt><dd><tt><a href="#Gui-isVisibleTo">isVisibleTo</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-isWindow"><strong>isWindow</strong></a>(...)</dt><dd><tt><a href="#Gui-isWindow">isWindow</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-isWindowModified"><strong>isWindowModified</strong></a>(...)</dt><dd><tt><a href="#Gui-isWindowModified">isWindowModified</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-keyPressEvent"><strong>keyPressEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-keyPressEvent">keyPressEvent</a>(self,&nbsp;QKeyEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-keyReleaseEvent"><strong>keyReleaseEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-keyReleaseEvent">keyReleaseEvent</a>(self,&nbsp;QKeyEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-keyboardGrabber"><strong>keyboardGrabber</strong></a>(...)</dt><dd><tt><a href="#Gui-keyboardGrabber">keyboardGrabber</a>()&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Gui-layout"><strong>layout</strong></a>(...)</dt><dd><tt><a href="#Gui-layout">layout</a>(self)&nbsp;-&gt;&nbsp;QLayout</tt></dd></dl>
+
+<dl><dt><a name="Gui-layoutDirection"><strong>layoutDirection</strong></a>(...)</dt><dd><tt><a href="#Gui-layoutDirection">layoutDirection</a>(self)&nbsp;-&gt;&nbsp;Qt.LayoutDirection</tt></dd></dl>
+
+<dl><dt><a name="Gui-leaveEvent"><strong>leaveEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-leaveEvent">leaveEvent</a>(self,&nbsp;QEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-locale"><strong>locale</strong></a>(...)</dt><dd><tt><a href="#Gui-locale">locale</a>(self)&nbsp;-&gt;&nbsp;QLocale</tt></dd></dl>
+
+<dl><dt><a name="Gui-lower"><strong>lower</strong></a>(...)</dt><dd><tt><a href="#Gui-lower">lower</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-mapFrom"><strong>mapFrom</strong></a>(...)</dt><dd><tt><a href="#Gui-mapFrom">mapFrom</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="Gui-mapFromGlobal"><strong>mapFromGlobal</strong></a>(...)</dt><dd><tt><a href="#Gui-mapFromGlobal">mapFromGlobal</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="Gui-mapFromParent"><strong>mapFromParent</strong></a>(...)</dt><dd><tt><a href="#Gui-mapFromParent">mapFromParent</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="Gui-mapTo"><strong>mapTo</strong></a>(...)</dt><dd><tt><a href="#Gui-mapTo">mapTo</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="Gui-mapToGlobal"><strong>mapToGlobal</strong></a>(...)</dt><dd><tt><a href="#Gui-mapToGlobal">mapToGlobal</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="Gui-mapToParent"><strong>mapToParent</strong></a>(...)</dt><dd><tt><a href="#Gui-mapToParent">mapToParent</a>(self,&nbsp;QPoint)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="Gui-mask"><strong>mask</strong></a>(...)</dt><dd><tt><a href="#Gui-mask">mask</a>(self)&nbsp;-&gt;&nbsp;QRegion</tt></dd></dl>
+
+<dl><dt><a name="Gui-maximumHeight"><strong>maximumHeight</strong></a>(...)</dt><dd><tt><a href="#Gui-maximumHeight">maximumHeight</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Gui-maximumSize"><strong>maximumSize</strong></a>(...)</dt><dd><tt><a href="#Gui-maximumSize">maximumSize</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="Gui-maximumWidth"><strong>maximumWidth</strong></a>(...)</dt><dd><tt><a href="#Gui-maximumWidth">maximumWidth</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Gui-metric"><strong>metric</strong></a>(...)</dt><dd><tt><a href="#Gui-metric">metric</a>(self,&nbsp;QPaintDevice.PaintDeviceMetric)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Gui-minimumHeight"><strong>minimumHeight</strong></a>(...)</dt><dd><tt><a href="#Gui-minimumHeight">minimumHeight</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Gui-minimumSize"><strong>minimumSize</strong></a>(...)</dt><dd><tt><a href="#Gui-minimumSize">minimumSize</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="Gui-minimumSizeHint"><strong>minimumSizeHint</strong></a>(...)</dt><dd><tt><a href="#Gui-minimumSizeHint">minimumSizeHint</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="Gui-minimumWidth"><strong>minimumWidth</strong></a>(...)</dt><dd><tt><a href="#Gui-minimumWidth">minimumWidth</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Gui-mouseDoubleClickEvent"><strong>mouseDoubleClickEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-mouseDoubleClickEvent">mouseDoubleClickEvent</a>(self,&nbsp;QMouseEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-mouseGrabber"><strong>mouseGrabber</strong></a>(...)</dt><dd><tt><a href="#Gui-mouseGrabber">mouseGrabber</a>()&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Gui-mouseMoveEvent"><strong>mouseMoveEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-mouseMoveEvent">mouseMoveEvent</a>(self,&nbsp;QMouseEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-mousePressEvent"><strong>mousePressEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-mousePressEvent">mousePressEvent</a>(self,&nbsp;QMouseEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-mouseReleaseEvent"><strong>mouseReleaseEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-mouseReleaseEvent">mouseReleaseEvent</a>(self,&nbsp;QMouseEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-move"><strong>move</strong></a>(...)</dt><dd><tt><a href="#Gui-move">move</a>(self,&nbsp;QPoint)<br>
+<a href="#Gui-move">move</a>(self,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Gui-moveEvent"><strong>moveEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-moveEvent">moveEvent</a>(self,&nbsp;QMoveEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-nativeEvent"><strong>nativeEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-nativeEvent">nativeEvent</a>(self,&nbsp;Union[QByteArray,&nbsp;bytes,&nbsp;bytearray],&nbsp;PyQt5.sip.voidptr)&nbsp;-&gt;&nbsp;Tuple[bool,&nbsp;int]</tt></dd></dl>
+
+<dl><dt><a name="Gui-nativeParentWidget"><strong>nativeParentWidget</strong></a>(...)</dt><dd><tt><a href="#Gui-nativeParentWidget">nativeParentWidget</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Gui-nextInFocusChain"><strong>nextInFocusChain</strong></a>(...)</dt><dd><tt><a href="#Gui-nextInFocusChain">nextInFocusChain</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Gui-normalGeometry"><strong>normalGeometry</strong></a>(...)</dt><dd><tt><a href="#Gui-normalGeometry">normalGeometry</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="Gui-overrideWindowFlags"><strong>overrideWindowFlags</strong></a>(...)</dt><dd><tt><a href="#Gui-overrideWindowFlags">overrideWindowFlags</a>(self,&nbsp;Union[Qt.WindowFlags,&nbsp;Qt.WindowType])</tt></dd></dl>
+
+<dl><dt><a name="Gui-overrideWindowState"><strong>overrideWindowState</strong></a>(...)</dt><dd><tt><a href="#Gui-overrideWindowState">overrideWindowState</a>(self,&nbsp;Union[Qt.WindowStates,&nbsp;Qt.WindowState])</tt></dd></dl>
+
+<dl><dt><a name="Gui-paintEngine"><strong>paintEngine</strong></a>(...)</dt><dd><tt><a href="#Gui-paintEngine">paintEngine</a>(self)&nbsp;-&gt;&nbsp;QPaintEngine</tt></dd></dl>
+
+<dl><dt><a name="Gui-paintEvent"><strong>paintEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-paintEvent">paintEvent</a>(self,&nbsp;QPaintEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-palette"><strong>palette</strong></a>(...)</dt><dd><tt><a href="#Gui-palette">palette</a>(self)&nbsp;-&gt;&nbsp;QPalette</tt></dd></dl>
+
+<dl><dt><a name="Gui-parentWidget"><strong>parentWidget</strong></a>(...)</dt><dd><tt><a href="#Gui-parentWidget">parentWidget</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Gui-pos"><strong>pos</strong></a>(...)</dt><dd><tt><a href="#Gui-pos">pos</a>(self)&nbsp;-&gt;&nbsp;QPoint</tt></dd></dl>
+
+<dl><dt><a name="Gui-previousInFocusChain"><strong>previousInFocusChain</strong></a>(...)</dt><dd><tt><a href="#Gui-previousInFocusChain">previousInFocusChain</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Gui-raise_"><strong>raise_</strong></a>(...)</dt><dd><tt><a href="#Gui-raise_">raise_</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-receivers"><strong>receivers</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="Gui-rect"><strong>rect</strong></a>(...)</dt><dd><tt><a href="#Gui-rect">rect</a>(self)&nbsp;-&gt;&nbsp;QRect</tt></dd></dl>
+
+<dl><dt><a name="Gui-releaseKeyboard"><strong>releaseKeyboard</strong></a>(...)</dt><dd><tt><a href="#Gui-releaseKeyboard">releaseKeyboard</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-releaseMouse"><strong>releaseMouse</strong></a>(...)</dt><dd><tt><a href="#Gui-releaseMouse">releaseMouse</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-releaseShortcut"><strong>releaseShortcut</strong></a>(...)</dt><dd><tt><a href="#Gui-releaseShortcut">releaseShortcut</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Gui-removeAction"><strong>removeAction</strong></a>(...)</dt><dd><tt><a href="#Gui-removeAction">removeAction</a>(self,&nbsp;QAction)</tt></dd></dl>
+
+<dl><dt><a name="Gui-render"><strong>render</strong></a>(...)</dt><dd><tt><a href="#Gui-render">render</a>(self,&nbsp;QPaintDevice,&nbsp;targetOffset:&nbsp;QPoint&nbsp;=&nbsp;QPoint(),&nbsp;sourceRegion:&nbsp;QRegion&nbsp;=&nbsp;QRegion(),&nbsp;flags:&nbsp;Union[<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlags,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlag]&nbsp;=&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.<a href="#Gui-RenderFlags">RenderFlags</a>(<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlag.DrawWindowBackground|<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlag.DrawChildren))<br>
+<a href="#Gui-render">render</a>(self,&nbsp;QPainter,&nbsp;targetOffset:&nbsp;QPoint&nbsp;=&nbsp;QPoint(),&nbsp;sourceRegion:&nbsp;QRegion&nbsp;=&nbsp;QRegion(),&nbsp;flags:&nbsp;Union[<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlags,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlag]&nbsp;=&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.<a href="#Gui-RenderFlags">RenderFlags</a>(<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlag.DrawWindowBackground|<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlag.DrawChildren))</tt></dd></dl>
+
+<dl><dt><a name="Gui-repaint"><strong>repaint</strong></a>(...)</dt><dd><tt><a href="#Gui-repaint">repaint</a>(self)<br>
+<a href="#Gui-repaint">repaint</a>(self,&nbsp;int,&nbsp;int,&nbsp;int,&nbsp;int)<br>
+<a href="#Gui-repaint">repaint</a>(self,&nbsp;QRect)<br>
+<a href="#Gui-repaint">repaint</a>(self,&nbsp;QRegion)</tt></dd></dl>
+
+<dl><dt><a name="Gui-resize"><strong>resize</strong></a>(...)</dt><dd><tt><a href="#Gui-resize">resize</a>(self,&nbsp;QSize)<br>
+<a href="#Gui-resize">resize</a>(self,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Gui-resizeEvent"><strong>resizeEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-resizeEvent">resizeEvent</a>(self,&nbsp;QResizeEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-restoreGeometry"><strong>restoreGeometry</strong></a>(...)</dt><dd><tt><a href="#Gui-restoreGeometry">restoreGeometry</a>(self,&nbsp;Union[QByteArray,&nbsp;bytes,&nbsp;bytearray])&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-saveGeometry"><strong>saveGeometry</strong></a>(...)</dt><dd><tt><a href="#Gui-saveGeometry">saveGeometry</a>(self)&nbsp;-&gt;&nbsp;QByteArray</tt></dd></dl>
+
+<dl><dt><a name="Gui-screen"><strong>screen</strong></a>(...)</dt><dd><tt><a href="#Gui-screen">screen</a>(self)&nbsp;-&gt;&nbsp;QScreen</tt></dd></dl>
+
+<dl><dt><a name="Gui-scroll"><strong>scroll</strong></a>(...)</dt><dd><tt><a href="#Gui-scroll">scroll</a>(self,&nbsp;int,&nbsp;int)<br>
+<a href="#Gui-scroll">scroll</a>(self,&nbsp;int,&nbsp;int,&nbsp;QRect)</tt></dd></dl>
+
+<dl><dt><a name="Gui-sender"><strong>sender</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="Gui-senderSignalIndex"><strong>senderSignalIndex</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="Gui-setAcceptDrops"><strong>setAcceptDrops</strong></a>(...)</dt><dd><tt><a href="#Gui-setAcceptDrops">setAcceptDrops</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setAccessibleDescription"><strong>setAccessibleDescription</strong></a>(...)</dt><dd><tt><a href="#Gui-setAccessibleDescription">setAccessibleDescription</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setAccessibleName"><strong>setAccessibleName</strong></a>(...)</dt><dd><tt><a href="#Gui-setAccessibleName">setAccessibleName</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setAttribute"><strong>setAttribute</strong></a>(...)</dt><dd><tt><a href="#Gui-setAttribute">setAttribute</a>(self,&nbsp;Qt.WidgetAttribute,&nbsp;on:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setAutoFillBackground"><strong>setAutoFillBackground</strong></a>(...)</dt><dd><tt><a href="#Gui-setAutoFillBackground">setAutoFillBackground</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setBackgroundRole"><strong>setBackgroundRole</strong></a>(...)</dt><dd><tt><a href="#Gui-setBackgroundRole">setBackgroundRole</a>(self,&nbsp;QPalette.ColorRole)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setBaseSize"><strong>setBaseSize</strong></a>(...)</dt><dd><tt><a href="#Gui-setBaseSize">setBaseSize</a>(self,&nbsp;int,&nbsp;int)<br>
+<a href="#Gui-setBaseSize">setBaseSize</a>(self,&nbsp;QSize)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setContentsMargins"><strong>setContentsMargins</strong></a>(...)</dt><dd><tt><a href="#Gui-setContentsMargins">setContentsMargins</a>(self,&nbsp;int,&nbsp;int,&nbsp;int,&nbsp;int)<br>
+<a href="#Gui-setContentsMargins">setContentsMargins</a>(self,&nbsp;QMargins)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setContextMenuPolicy"><strong>setContextMenuPolicy</strong></a>(...)</dt><dd><tt><a href="#Gui-setContextMenuPolicy">setContextMenuPolicy</a>(self,&nbsp;Qt.ContextMenuPolicy)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setCursor"><strong>setCursor</strong></a>(...)</dt><dd><tt><a href="#Gui-setCursor">setCursor</a>(self,&nbsp;Union[QCursor,&nbsp;Qt.CursorShape])</tt></dd></dl>
+
+<dl><dt><a name="Gui-setDisabled"><strong>setDisabled</strong></a>(...)</dt><dd><tt><a href="#Gui-setDisabled">setDisabled</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setEnabled"><strong>setEnabled</strong></a>(...)</dt><dd><tt><a href="#Gui-setEnabled">setEnabled</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setFixedHeight"><strong>setFixedHeight</strong></a>(...)</dt><dd><tt><a href="#Gui-setFixedHeight">setFixedHeight</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setFixedSize"><strong>setFixedSize</strong></a>(...)</dt><dd><tt><a href="#Gui-setFixedSize">setFixedSize</a>(self,&nbsp;QSize)<br>
+<a href="#Gui-setFixedSize">setFixedSize</a>(self,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setFixedWidth"><strong>setFixedWidth</strong></a>(...)</dt><dd><tt><a href="#Gui-setFixedWidth">setFixedWidth</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setFocus"><strong>setFocus</strong></a>(...)</dt><dd><tt><a href="#Gui-setFocus">setFocus</a>(self)<br>
+<a href="#Gui-setFocus">setFocus</a>(self,&nbsp;Qt.FocusReason)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setFocusPolicy"><strong>setFocusPolicy</strong></a>(...)</dt><dd><tt><a href="#Gui-setFocusPolicy">setFocusPolicy</a>(self,&nbsp;Qt.FocusPolicy)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setFocusProxy"><strong>setFocusProxy</strong></a>(...)</dt><dd><tt><a href="#Gui-setFocusProxy">setFocusProxy</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setFont"><strong>setFont</strong></a>(...)</dt><dd><tt><a href="#Gui-setFont">setFont</a>(self,&nbsp;QFont)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setForegroundRole"><strong>setForegroundRole</strong></a>(...)</dt><dd><tt><a href="#Gui-setForegroundRole">setForegroundRole</a>(self,&nbsp;QPalette.ColorRole)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setGeometry"><strong>setGeometry</strong></a>(...)</dt><dd><tt><a href="#Gui-setGeometry">setGeometry</a>(self,&nbsp;QRect)<br>
+<a href="#Gui-setGeometry">setGeometry</a>(self,&nbsp;int,&nbsp;int,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setGraphicsEffect"><strong>setGraphicsEffect</strong></a>(...)</dt><dd><tt><a href="#Gui-setGraphicsEffect">setGraphicsEffect</a>(self,&nbsp;QGraphicsEffect)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setHidden"><strong>setHidden</strong></a>(...)</dt><dd><tt><a href="#Gui-setHidden">setHidden</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setInputMethodHints"><strong>setInputMethodHints</strong></a>(...)</dt><dd><tt><a href="#Gui-setInputMethodHints">setInputMethodHints</a>(self,&nbsp;Union[Qt.InputMethodHints,&nbsp;Qt.InputMethodHint])</tt></dd></dl>
+
+<dl><dt><a name="Gui-setLayout"><strong>setLayout</strong></a>(...)</dt><dd><tt><a href="#Gui-setLayout">setLayout</a>(self,&nbsp;QLayout)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setLayoutDirection"><strong>setLayoutDirection</strong></a>(...)</dt><dd><tt><a href="#Gui-setLayoutDirection">setLayoutDirection</a>(self,&nbsp;Qt.LayoutDirection)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setLocale"><strong>setLocale</strong></a>(...)</dt><dd><tt><a href="#Gui-setLocale">setLocale</a>(self,&nbsp;QLocale)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setMask"><strong>setMask</strong></a>(...)</dt><dd><tt><a href="#Gui-setMask">setMask</a>(self,&nbsp;QBitmap)<br>
+<a href="#Gui-setMask">setMask</a>(self,&nbsp;QRegion)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setMaximumHeight"><strong>setMaximumHeight</strong></a>(...)</dt><dd><tt><a href="#Gui-setMaximumHeight">setMaximumHeight</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setMaximumSize"><strong>setMaximumSize</strong></a>(...)</dt><dd><tt><a href="#Gui-setMaximumSize">setMaximumSize</a>(self,&nbsp;int,&nbsp;int)<br>
+<a href="#Gui-setMaximumSize">setMaximumSize</a>(self,&nbsp;QSize)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setMaximumWidth"><strong>setMaximumWidth</strong></a>(...)</dt><dd><tt><a href="#Gui-setMaximumWidth">setMaximumWidth</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setMinimumHeight"><strong>setMinimumHeight</strong></a>(...)</dt><dd><tt><a href="#Gui-setMinimumHeight">setMinimumHeight</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setMinimumSize"><strong>setMinimumSize</strong></a>(...)</dt><dd><tt><a href="#Gui-setMinimumSize">setMinimumSize</a>(self,&nbsp;int,&nbsp;int)<br>
+<a href="#Gui-setMinimumSize">setMinimumSize</a>(self,&nbsp;QSize)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setMinimumWidth"><strong>setMinimumWidth</strong></a>(...)</dt><dd><tt><a href="#Gui-setMinimumWidth">setMinimumWidth</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setMouseTracking"><strong>setMouseTracking</strong></a>(...)</dt><dd><tt><a href="#Gui-setMouseTracking">setMouseTracking</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setPalette"><strong>setPalette</strong></a>(...)</dt><dd><tt><a href="#Gui-setPalette">setPalette</a>(self,&nbsp;QPalette)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setParent"><strong>setParent</strong></a>(...)</dt><dd><tt><a href="#Gui-setParent">setParent</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)<br>
+<a href="#Gui-setParent">setParent</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>,&nbsp;Union[Qt.WindowFlags,&nbsp;Qt.WindowType])</tt></dd></dl>
+
+<dl><dt><a name="Gui-setShortcutAutoRepeat"><strong>setShortcutAutoRepeat</strong></a>(...)</dt><dd><tt><a href="#Gui-setShortcutAutoRepeat">setShortcutAutoRepeat</a>(self,&nbsp;int,&nbsp;enabled:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setShortcutEnabled"><strong>setShortcutEnabled</strong></a>(...)</dt><dd><tt><a href="#Gui-setShortcutEnabled">setShortcutEnabled</a>(self,&nbsp;int,&nbsp;enabled:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setSizeIncrement"><strong>setSizeIncrement</strong></a>(...)</dt><dd><tt><a href="#Gui-setSizeIncrement">setSizeIncrement</a>(self,&nbsp;int,&nbsp;int)<br>
+<a href="#Gui-setSizeIncrement">setSizeIncrement</a>(self,&nbsp;QSize)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setSizePolicy"><strong>setSizePolicy</strong></a>(...)</dt><dd><tt><a href="#Gui-setSizePolicy">setSizePolicy</a>(self,&nbsp;QSizePolicy)<br>
+<a href="#Gui-setSizePolicy">setSizePolicy</a>(self,&nbsp;QSizePolicy.Policy,&nbsp;QSizePolicy.Policy)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setStatusTip"><strong>setStatusTip</strong></a>(...)</dt><dd><tt><a href="#Gui-setStatusTip">setStatusTip</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setStyle"><strong>setStyle</strong></a>(...)</dt><dd><tt><a href="#Gui-setStyle">setStyle</a>(self,&nbsp;QStyle)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setStyleSheet"><strong>setStyleSheet</strong></a>(...)</dt><dd><tt><a href="#Gui-setStyleSheet">setStyleSheet</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setTabOrder"><strong>setTabOrder</strong></a>(...)</dt><dd><tt><a href="#Gui-setTabOrder">setTabOrder</a>(<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setTabletTracking"><strong>setTabletTracking</strong></a>(...)</dt><dd><tt><a href="#Gui-setTabletTracking">setTabletTracking</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setToolTip"><strong>setToolTip</strong></a>(...)</dt><dd><tt><a href="#Gui-setToolTip">setToolTip</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setToolTipDuration"><strong>setToolTipDuration</strong></a>(...)</dt><dd><tt><a href="#Gui-setToolTipDuration">setToolTipDuration</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setUpdatesEnabled"><strong>setUpdatesEnabled</strong></a>(...)</dt><dd><tt><a href="#Gui-setUpdatesEnabled">setUpdatesEnabled</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setVisible"><strong>setVisible</strong></a>(...)</dt><dd><tt><a href="#Gui-setVisible">setVisible</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setWhatsThis"><strong>setWhatsThis</strong></a>(...)</dt><dd><tt><a href="#Gui-setWhatsThis">setWhatsThis</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setWindowFilePath"><strong>setWindowFilePath</strong></a>(...)</dt><dd><tt><a href="#Gui-setWindowFilePath">setWindowFilePath</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setWindowFlag"><strong>setWindowFlag</strong></a>(...)</dt><dd><tt><a href="#Gui-setWindowFlag">setWindowFlag</a>(self,&nbsp;Qt.WindowType,&nbsp;on:&nbsp;bool&nbsp;=&nbsp;True)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setWindowFlags"><strong>setWindowFlags</strong></a>(...)</dt><dd><tt><a href="#Gui-setWindowFlags">setWindowFlags</a>(self,&nbsp;Union[Qt.WindowFlags,&nbsp;Qt.WindowType])</tt></dd></dl>
+
+<dl><dt><a name="Gui-setWindowIcon"><strong>setWindowIcon</strong></a>(...)</dt><dd><tt><a href="#Gui-setWindowIcon">setWindowIcon</a>(self,&nbsp;QIcon)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setWindowIconText"><strong>setWindowIconText</strong></a>(...)</dt><dd><tt><a href="#Gui-setWindowIconText">setWindowIconText</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setWindowModality"><strong>setWindowModality</strong></a>(...)</dt><dd><tt><a href="#Gui-setWindowModality">setWindowModality</a>(self,&nbsp;Qt.WindowModality)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setWindowModified"><strong>setWindowModified</strong></a>(...)</dt><dd><tt><a href="#Gui-setWindowModified">setWindowModified</a>(self,&nbsp;bool)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setWindowOpacity"><strong>setWindowOpacity</strong></a>(...)</dt><dd><tt><a href="#Gui-setWindowOpacity">setWindowOpacity</a>(self,&nbsp;float)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setWindowRole"><strong>setWindowRole</strong></a>(...)</dt><dd><tt><a href="#Gui-setWindowRole">setWindowRole</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setWindowState"><strong>setWindowState</strong></a>(...)</dt><dd><tt><a href="#Gui-setWindowState">setWindowState</a>(self,&nbsp;Union[Qt.WindowStates,&nbsp;Qt.WindowState])</tt></dd></dl>
+
+<dl><dt><a name="Gui-setWindowTitle"><strong>setWindowTitle</strong></a>(...)</dt><dd><tt><a href="#Gui-setWindowTitle">setWindowTitle</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Gui-sharedPainter"><strong>sharedPainter</strong></a>(...)</dt><dd><tt><a href="#Gui-sharedPainter">sharedPainter</a>(self)&nbsp;-&gt;&nbsp;QPainter</tt></dd></dl>
+
+<dl><dt><a name="Gui-show"><strong>show</strong></a>(...)</dt><dd><tt><a href="#Gui-show">show</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-showEvent"><strong>showEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-showEvent">showEvent</a>(self,&nbsp;QShowEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-showFullScreen"><strong>showFullScreen</strong></a>(...)</dt><dd><tt><a href="#Gui-showFullScreen">showFullScreen</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-showMaximized"><strong>showMaximized</strong></a>(...)</dt><dd><tt><a href="#Gui-showMaximized">showMaximized</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-showMinimized"><strong>showMinimized</strong></a>(...)</dt><dd><tt><a href="#Gui-showMinimized">showMinimized</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-showNormal"><strong>showNormal</strong></a>(...)</dt><dd><tt><a href="#Gui-showNormal">showNormal</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-size"><strong>size</strong></a>(...)</dt><dd><tt><a href="#Gui-size">size</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="Gui-sizeHint"><strong>sizeHint</strong></a>(...)</dt><dd><tt><a href="#Gui-sizeHint">sizeHint</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="Gui-sizeIncrement"><strong>sizeIncrement</strong></a>(...)</dt><dd><tt><a href="#Gui-sizeIncrement">sizeIncrement</a>(self)&nbsp;-&gt;&nbsp;QSize</tt></dd></dl>
+
+<dl><dt><a name="Gui-sizePolicy"><strong>sizePolicy</strong></a>(...)</dt><dd><tt><a href="#Gui-sizePolicy">sizePolicy</a>(self)&nbsp;-&gt;&nbsp;QSizePolicy</tt></dd></dl>
+
+<dl><dt><a name="Gui-stackUnder"><strong>stackUnder</strong></a>(...)</dt><dd><tt><a href="#Gui-stackUnder">stackUnder</a>(self,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>)</tt></dd></dl>
+
+<dl><dt><a name="Gui-statusTip"><strong>statusTip</strong></a>(...)</dt><dd><tt><a href="#Gui-statusTip">statusTip</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Gui-style"><strong>style</strong></a>(...)</dt><dd><tt><a href="#Gui-style">style</a>(self)&nbsp;-&gt;&nbsp;QStyle</tt></dd></dl>
+
+<dl><dt><a name="Gui-styleSheet"><strong>styleSheet</strong></a>(...)</dt><dd><tt><a href="#Gui-styleSheet">styleSheet</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Gui-tabletEvent"><strong>tabletEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-tabletEvent">tabletEvent</a>(self,&nbsp;QTabletEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-testAttribute"><strong>testAttribute</strong></a>(...)</dt><dd><tt><a href="#Gui-testAttribute">testAttribute</a>(self,&nbsp;Qt.WidgetAttribute)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-timerEvent"><strong>timerEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="Gui-toolTip"><strong>toolTip</strong></a>(...)</dt><dd><tt><a href="#Gui-toolTip">toolTip</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Gui-toolTipDuration"><strong>toolTipDuration</strong></a>(...)</dt><dd><tt><a href="#Gui-toolTipDuration">toolTipDuration</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Gui-underMouse"><strong>underMouse</strong></a>(...)</dt><dd><tt><a href="#Gui-underMouse">underMouse</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-ungrabGesture"><strong>ungrabGesture</strong></a>(...)</dt><dd><tt><a href="#Gui-ungrabGesture">ungrabGesture</a>(self,&nbsp;Qt.GestureType)</tt></dd></dl>
+
+<dl><dt><a name="Gui-unsetCursor"><strong>unsetCursor</strong></a>(...)</dt><dd><tt><a href="#Gui-unsetCursor">unsetCursor</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-unsetLayoutDirection"><strong>unsetLayoutDirection</strong></a>(...)</dt><dd><tt><a href="#Gui-unsetLayoutDirection">unsetLayoutDirection</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-unsetLocale"><strong>unsetLocale</strong></a>(...)</dt><dd><tt><a href="#Gui-unsetLocale">unsetLocale</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-update"><strong>update</strong></a>(...)</dt><dd><tt><a href="#Gui-update">update</a>(self)<br>
+<a href="#Gui-update">update</a>(self,&nbsp;QRect)<br>
+<a href="#Gui-update">update</a>(self,&nbsp;QRegion)<br>
+<a href="#Gui-update">update</a>(self,&nbsp;int,&nbsp;int,&nbsp;int,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Gui-updateGeometry"><strong>updateGeometry</strong></a>(...)</dt><dd><tt><a href="#Gui-updateGeometry">updateGeometry</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-updateMicroFocus"><strong>updateMicroFocus</strong></a>(...)</dt><dd><tt><a href="#Gui-updateMicroFocus">updateMicroFocus</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-updatesEnabled"><strong>updatesEnabled</strong></a>(...)</dt><dd><tt><a href="#Gui-updatesEnabled">updatesEnabled</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-visibleRegion"><strong>visibleRegion</strong></a>(...)</dt><dd><tt><a href="#Gui-visibleRegion">visibleRegion</a>(self)&nbsp;-&gt;&nbsp;QRegion</tt></dd></dl>
+
+<dl><dt><a name="Gui-whatsThis"><strong>whatsThis</strong></a>(...)</dt><dd><tt><a href="#Gui-whatsThis">whatsThis</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Gui-wheelEvent"><strong>wheelEvent</strong></a>(...)</dt><dd><tt><a href="#Gui-wheelEvent">wheelEvent</a>(self,&nbsp;QWheelEvent)</tt></dd></dl>
+
+<dl><dt><a name="Gui-width"><strong>width</strong></a>(...)</dt><dd><tt><a href="#Gui-width">width</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Gui-winId"><strong>winId</strong></a>(...)</dt><dd><tt><a href="#Gui-winId">winId</a>(self)&nbsp;-&gt;&nbsp;PyQt5.sip.voidptr</tt></dd></dl>
+
+<dl><dt><a name="Gui-window"><strong>window</strong></a>(...)</dt><dd><tt><a href="#Gui-window">window</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a></tt></dd></dl>
+
+<dl><dt><a name="Gui-windowFilePath"><strong>windowFilePath</strong></a>(...)</dt><dd><tt><a href="#Gui-windowFilePath">windowFilePath</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Gui-windowFlags"><strong>windowFlags</strong></a>(...)</dt><dd><tt><a href="#Gui-windowFlags">windowFlags</a>(self)&nbsp;-&gt;&nbsp;Qt.WindowFlags</tt></dd></dl>
+
+<dl><dt><a name="Gui-windowHandle"><strong>windowHandle</strong></a>(...)</dt><dd><tt><a href="#Gui-windowHandle">windowHandle</a>(self)&nbsp;-&gt;&nbsp;QWindow</tt></dd></dl>
+
+<dl><dt><a name="Gui-windowIcon"><strong>windowIcon</strong></a>(...)</dt><dd><tt><a href="#Gui-windowIcon">windowIcon</a>(self)&nbsp;-&gt;&nbsp;QIcon</tt></dd></dl>
+
+<strong>windowIconChanged</strong> = &lt;unbound PYQT_SIGNAL windowIconChanged(QIcon)&gt;
+<dl><dt><a name="Gui-windowIconText"><strong>windowIconText</strong></a>(...)</dt><dd><tt><a href="#Gui-windowIconText">windowIconText</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<strong>windowIconTextChanged</strong> = &lt;unbound PYQT_SIGNAL windowIconTextChanged(QString)&gt;
+<dl><dt><a name="Gui-windowModality"><strong>windowModality</strong></a>(...)</dt><dd><tt><a href="#Gui-windowModality">windowModality</a>(self)&nbsp;-&gt;&nbsp;Qt.WindowModality</tt></dd></dl>
+
+<dl><dt><a name="Gui-windowOpacity"><strong>windowOpacity</strong></a>(...)</dt><dd><tt><a href="#Gui-windowOpacity">windowOpacity</a>(self)&nbsp;-&gt;&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="Gui-windowRole"><strong>windowRole</strong></a>(...)</dt><dd><tt><a href="#Gui-windowRole">windowRole</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Gui-windowState"><strong>windowState</strong></a>(...)</dt><dd><tt><a href="#Gui-windowState">windowState</a>(self)&nbsp;-&gt;&nbsp;Qt.WindowStates</tt></dd></dl>
+
+<dl><dt><a name="Gui-windowTitle"><strong>windowTitle</strong></a>(...)</dt><dd><tt><a href="#Gui-windowTitle">windowTitle</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<strong>windowTitleChanged</strong> = &lt;unbound PYQT_SIGNAL windowTitleChanged(QString)&gt;
+<dl><dt><a name="Gui-windowType"><strong>windowType</strong></a>(...)</dt><dd><tt><a href="#Gui-windowType">windowType</a>(self)&nbsp;-&gt;&nbsp;Qt.WindowType</tt></dd></dl>
+
+<dl><dt><a name="Gui-x"><strong>x</strong></a>(...)</dt><dd><tt><a href="#Gui-x">x</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Gui-y"><strong>y</strong></a>(...)</dt><dd><tt><a href="#Gui-y">y</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="PyQt5.QtWidgets.html#QWidget">PyQt5.QtWidgets.QWidget</a>:<br>
+<dl><dt><strong>DrawChildren</strong> = 2</dl>
+
+<dl><dt><strong>DrawWindowBackground</strong> = 1</dl>
+
+<dl><dt><strong>IgnoreMask</strong> = 4</dl>
+
+<dl><dt><strong>RenderFlag</strong> = &lt;class 'PyQt5.QtWidgets.QWidget.RenderFlag'&gt;</dl>
+
+<dl><dt><strong>RenderFlags</strong> = &lt;class 'PyQt5.QtWidgets.QWidget.RenderFlags'&gt;<dd><tt><a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.<a href="#Gui-RenderFlags">RenderFlags</a>()<br>
+<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.<a href="#Gui-RenderFlags">RenderFlags</a>(Union[<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlags,&nbsp;<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlag])<br>
+<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.<a href="#Gui-RenderFlags">RenderFlags</a>(<a href="PyQt5.QtWidgets.html#QWidget">QWidget</a>.RenderFlags)</tt></dl>
+
+<hr>
+Methods inherited from <a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a>:<br>
+<dl><dt><a name="Gui-__getattr__"><strong>__getattr__</strong></a>(...)</dt><dd><tt><a href="#Gui-__getattr__">__getattr__</a>(self,&nbsp;str)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="Gui-blockSignals"><strong>blockSignals</strong></a>(...)</dt><dd><tt><a href="#Gui-blockSignals">blockSignals</a>(self,&nbsp;bool)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-children"><strong>children</strong></a>(...)</dt><dd><tt><a href="#Gui-children">children</a>(self)&nbsp;-&gt;&nbsp;List[<a href="PyQt5.QtCore.html#QObject">QObject</a>]</tt></dd></dl>
+
+<dl><dt><a name="Gui-deleteLater"><strong>deleteLater</strong></a>(...)</dt><dd><tt><a href="#Gui-deleteLater">deleteLater</a>(self)</tt></dd></dl>
+
+<strong>destroyed</strong> = &lt;unbound PYQT_SIGNAL destroyed(QObject*)&gt;
+<dl><dt><a name="Gui-disconnect"><strong>disconnect</strong></a>(...)</dt><dd><tt><a href="#Gui-disconnect">disconnect</a>(QMetaObject.Connection)&nbsp;-&gt;&nbsp;bool<br>
+<a href="#Gui-disconnect">disconnect</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-dumpObjectInfo"><strong>dumpObjectInfo</strong></a>(...)</dt><dd><tt><a href="#Gui-dumpObjectInfo">dumpObjectInfo</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-dumpObjectTree"><strong>dumpObjectTree</strong></a>(...)</dt><dd><tt><a href="#Gui-dumpObjectTree">dumpObjectTree</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Gui-dynamicPropertyNames"><strong>dynamicPropertyNames</strong></a>(...)</dt><dd><tt><a href="#Gui-dynamicPropertyNames">dynamicPropertyNames</a>(self)&nbsp;-&gt;&nbsp;List[QByteArray]</tt></dd></dl>
+
+<dl><dt><a name="Gui-eventFilter"><strong>eventFilter</strong></a>(...)</dt><dd><tt><a href="#Gui-eventFilter">eventFilter</a>(self,&nbsp;<a href="PyQt5.QtCore.html#QObject">QObject</a>,&nbsp;QEvent)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-findChild"><strong>findChild</strong></a>(...)</dt><dd><tt><a href="#Gui-findChild">findChild</a>(self,&nbsp;type,&nbsp;name:&nbsp;str&nbsp;=&nbsp;'',&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtCore.html#QObject">QObject</a><br>
+<a href="#Gui-findChild">findChild</a>(self,&nbsp;Tuple,&nbsp;name:&nbsp;str&nbsp;=&nbsp;'',&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtCore.html#QObject">QObject</a></tt></dd></dl>
+
+<dl><dt><a name="Gui-findChildren"><strong>findChildren</strong></a>(...)</dt><dd><tt><a href="#Gui-findChildren">findChildren</a>(self,&nbsp;type,&nbsp;name:&nbsp;str&nbsp;=&nbsp;'',&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[<a href="PyQt5.QtCore.html#QObject">QObject</a>]<br>
+<a href="#Gui-findChildren">findChildren</a>(self,&nbsp;Tuple,&nbsp;name:&nbsp;str&nbsp;=&nbsp;'',&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[<a href="PyQt5.QtCore.html#QObject">QObject</a>]<br>
+<a href="#Gui-findChildren">findChildren</a>(self,&nbsp;type,&nbsp;QRegExp,&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[<a href="PyQt5.QtCore.html#QObject">QObject</a>]<br>
+<a href="#Gui-findChildren">findChildren</a>(self,&nbsp;Tuple,&nbsp;QRegExp,&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[<a href="PyQt5.QtCore.html#QObject">QObject</a>]<br>
+<a href="#Gui-findChildren">findChildren</a>(self,&nbsp;type,&nbsp;QRegularExpression,&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[<a href="PyQt5.QtCore.html#QObject">QObject</a>]<br>
+<a href="#Gui-findChildren">findChildren</a>(self,&nbsp;Tuple,&nbsp;QRegularExpression,&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[<a href="PyQt5.QtCore.html#QObject">QObject</a>]</tt></dd></dl>
+
+<dl><dt><a name="Gui-inherits"><strong>inherits</strong></a>(...)</dt><dd><tt><a href="#Gui-inherits">inherits</a>(self,&nbsp;str)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-installEventFilter"><strong>installEventFilter</strong></a>(...)</dt><dd><tt><a href="#Gui-installEventFilter">installEventFilter</a>(self,&nbsp;<a href="PyQt5.QtCore.html#QObject">QObject</a>)</tt></dd></dl>
+
+<dl><dt><a name="Gui-isWidgetType"><strong>isWidgetType</strong></a>(...)</dt><dd><tt><a href="#Gui-isWidgetType">isWidgetType</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-isWindowType"><strong>isWindowType</strong></a>(...)</dt><dd><tt><a href="#Gui-isWindowType">isWindowType</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-killTimer"><strong>killTimer</strong></a>(...)</dt><dd><tt><a href="#Gui-killTimer">killTimer</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Gui-metaObject"><strong>metaObject</strong></a>(...)</dt><dd><tt><a href="#Gui-metaObject">metaObject</a>(self)&nbsp;-&gt;&nbsp;QMetaObject</tt></dd></dl>
+
+<dl><dt><a name="Gui-moveToThread"><strong>moveToThread</strong></a>(...)</dt><dd><tt><a href="#Gui-moveToThread">moveToThread</a>(self,&nbsp;QThread)</tt></dd></dl>
+
+<dl><dt><a name="Gui-objectName"><strong>objectName</strong></a>(...)</dt><dd><tt><a href="#Gui-objectName">objectName</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<strong>objectNameChanged</strong> = &lt;unbound PYQT_SIGNAL objectNameChanged(QString)&gt;
+<dl><dt><a name="Gui-parent"><strong>parent</strong></a>(...)</dt><dd><tt><a href="#Gui-parent">parent</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtCore.html#QObject">QObject</a></tt></dd></dl>
+
+<dl><dt><a name="Gui-property"><strong>property</strong></a>(...)</dt><dd><tt><a href="#Gui-property">property</a>(self,&nbsp;str)&nbsp;-&gt;&nbsp;Any</tt></dd></dl>
+
+<dl><dt><a name="Gui-pyqtConfigure"><strong>pyqtConfigure</strong></a>(...)</dt><dd><tt><a href="PyQt5.QtCore.html#QObject">QObject</a>.<a href="#Gui-pyqtConfigure">pyqtConfigure</a>(...)<br>
+&nbsp;<br>
+Each&nbsp;keyword&nbsp;argument&nbsp;is&nbsp;either&nbsp;the&nbsp;name&nbsp;of&nbsp;a&nbsp;Qt&nbsp;property&nbsp;or&nbsp;a&nbsp;Qt&nbsp;signal.<br>
+For&nbsp;properties&nbsp;the&nbsp;property&nbsp;is&nbsp;set&nbsp;to&nbsp;the&nbsp;given&nbsp;value&nbsp;which&nbsp;should&nbsp;be&nbsp;of&nbsp;an<br>
+appropriate&nbsp;type.<br>
+For&nbsp;signals&nbsp;the&nbsp;signal&nbsp;is&nbsp;connected&nbsp;to&nbsp;the&nbsp;given&nbsp;value&nbsp;which&nbsp;should&nbsp;be&nbsp;a<br>
+callable.</tt></dd></dl>
+
+<dl><dt><a name="Gui-removeEventFilter"><strong>removeEventFilter</strong></a>(...)</dt><dd><tt><a href="#Gui-removeEventFilter">removeEventFilter</a>(self,&nbsp;<a href="PyQt5.QtCore.html#QObject">QObject</a>)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setObjectName"><strong>setObjectName</strong></a>(...)</dt><dd><tt><a href="#Gui-setObjectName">setObjectName</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Gui-setProperty"><strong>setProperty</strong></a>(...)</dt><dd><tt><a href="#Gui-setProperty">setProperty</a>(self,&nbsp;str,&nbsp;Any)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-signalsBlocked"><strong>signalsBlocked</strong></a>(...)</dt><dd><tt><a href="#Gui-signalsBlocked">signalsBlocked</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-startTimer"><strong>startTimer</strong></a>(...)</dt><dd><tt><a href="#Gui-startTimer">startTimer</a>(self,&nbsp;int,&nbsp;timerType:&nbsp;Qt.TimerType&nbsp;=&nbsp;Qt.CoarseTimer)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Gui-thread"><strong>thread</strong></a>(...)</dt><dd><tt><a href="#Gui-thread">thread</a>(self)&nbsp;-&gt;&nbsp;QThread</tt></dd></dl>
+
+<dl><dt><a name="Gui-tr"><strong>tr</strong></a>(...)</dt><dd><tt><a href="#Gui-tr">tr</a>(self,&nbsp;str,&nbsp;disambiguation:&nbsp;str&nbsp;=&nbsp;None,&nbsp;n:&nbsp;int&nbsp;=&nbsp;-1)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a>:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a>:<br>
+<dl><dt><strong>staticMetaObject</strong> = &lt;PyQt5.QtCore.QMetaObject object&gt;</dl>
+
+<hr>
+Methods inherited from <a href="PyQt5.QtGui.html#QPaintDevice">PyQt5.QtGui.QPaintDevice</a>:<br>
+<dl><dt><a name="Gui-colorCount"><strong>colorCount</strong></a>(...)</dt><dd><tt><a href="#Gui-colorCount">colorCount</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Gui-depth"><strong>depth</strong></a>(...)</dt><dd><tt><a href="#Gui-depth">depth</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Gui-devicePixelRatio"><strong>devicePixelRatio</strong></a>(...)</dt><dd><tt><a href="#Gui-devicePixelRatio">devicePixelRatio</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Gui-devicePixelRatioF"><strong>devicePixelRatioF</strong></a>(...)</dt><dd><tt><a href="#Gui-devicePixelRatioF">devicePixelRatioF</a>(self)&nbsp;-&gt;&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="Gui-devicePixelRatioFScale"><strong>devicePixelRatioFScale</strong></a>(...)</dt><dd><tt><a href="#Gui-devicePixelRatioFScale">devicePixelRatioFScale</a>()&nbsp;-&gt;&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="Gui-heightMM"><strong>heightMM</strong></a>(...)</dt><dd><tt><a href="#Gui-heightMM">heightMM</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Gui-logicalDpiX"><strong>logicalDpiX</strong></a>(...)</dt><dd><tt><a href="#Gui-logicalDpiX">logicalDpiX</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Gui-logicalDpiY"><strong>logicalDpiY</strong></a>(...)</dt><dd><tt><a href="#Gui-logicalDpiY">logicalDpiY</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Gui-paintingActive"><strong>paintingActive</strong></a>(...)</dt><dd><tt><a href="#Gui-paintingActive">paintingActive</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Gui-physicalDpiX"><strong>physicalDpiX</strong></a>(...)</dt><dd><tt><a href="#Gui-physicalDpiX">physicalDpiX</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Gui-physicalDpiY"><strong>physicalDpiY</strong></a>(...)</dt><dd><tt><a href="#Gui-physicalDpiY">physicalDpiY</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Gui-widthMM"><strong>widthMM</strong></a>(...)</dt><dd><tt><a href="#Gui-widthMM">widthMM</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="PyQt5.QtGui.html#QPaintDevice">PyQt5.QtGui.QPaintDevice</a>:<br>
+<dl><dt><strong>PaintDeviceMetric</strong> = &lt;class 'PyQt5.QtGui.QPaintDevice.PaintDeviceMetric'&gt;</dl>
+
+<dl><dt><strong>PdmDepth</strong> = 6</dl>
+
+<dl><dt><strong>PdmDevicePixelRatio</strong> = 11</dl>
+
+<dl><dt><strong>PdmDevicePixelRatioScaled</strong> = 12</dl>
+
+<dl><dt><strong>PdmDpiX</strong> = 7</dl>
+
+<dl><dt><strong>PdmDpiY</strong> = 8</dl>
+
+<dl><dt><strong>PdmHeight</strong> = 2</dl>
+
+<dl><dt><strong>PdmHeightMM</strong> = 4</dl>
+
+<dl><dt><strong>PdmNumColors</strong> = 5</dl>
+
+<dl><dt><strong>PdmPhysicalDpiX</strong> = 9</dl>
+
+<dl><dt><strong>PdmPhysicalDpiY</strong> = 10</dl>
+
+<dl><dt><strong>PdmWidth</strong> = 1</dl>
+
+<dl><dt><strong>PdmWidthMM</strong> = 3</dl>
+
+<hr>
+Static methods inherited from <a href="PyQt5.sip.html#simplewrapper">sip.simplewrapper</a>:<br>
+<dl><dt><a name="Gui-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="PyQt5.sip.html#wrappertype">sip.wrappertype</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="PyQt5.sip.html#simplewrapper">sip.simplewrapper</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Worker">class <strong>Worker</strong></a>(<a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Worker">Worker</a>(parent=None)<br>
+&nbsp;<br>
+Operation&nbsp;of&nbsp;threading<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="PyQt5.QtCore.html#QObject">QObject</a>&nbsp;([QtCore]):&nbsp;[PyQt5.QtCore]<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="bot_gui.html#Worker">Worker</a></dd>
+<dd><a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a></dd>
+<dd><a href="PyQt5.sip.html#wrapper">sip.wrapper</a></dd>
+<dd><a href="PyQt5.sip.html#simplewrapper">sip.simplewrapper</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Worker-__init__"><strong>__init__</strong></a>(self, parent=None)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Worker-do_work"><strong>do_work</strong></a>(self)</dt><dd><tt>Get&nbsp;index&nbsp;from&nbsp;combobox&nbsp;then&nbsp;passing&nbsp;to&nbsp;function&nbsp;bot()</tt></dd></dl>
+
+<strong>finished</strong> = &lt;unbound PYQT_SIGNAL finished()&gt;
+<dl><dt><a name="Worker-stop"><strong>stop</strong></a>(self)</dt><dd><tt>Stop&nbsp;running</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a>:<br>
+<dl><dt><a name="Worker-__getattr__"><strong>__getattr__</strong></a>(...)</dt><dd><tt><a href="#Worker-__getattr__">__getattr__</a>(self,&nbsp;str)&nbsp;-&gt;&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="Worker-blockSignals"><strong>blockSignals</strong></a>(...)</dt><dd><tt><a href="#Worker-blockSignals">blockSignals</a>(self,&nbsp;bool)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Worker-childEvent"><strong>childEvent</strong></a>(...)</dt><dd><tt><a href="#Worker-childEvent">childEvent</a>(self,&nbsp;QChildEvent)</tt></dd></dl>
+
+<dl><dt><a name="Worker-children"><strong>children</strong></a>(...)</dt><dd><tt><a href="#Worker-children">children</a>(self)&nbsp;-&gt;&nbsp;List[<a href="PyQt5.QtCore.html#QObject">QObject</a>]</tt></dd></dl>
+
+<dl><dt><a name="Worker-connectNotify"><strong>connectNotify</strong></a>(...)</dt><dd><tt><a href="#Worker-connectNotify">connectNotify</a>(self,&nbsp;QMetaMethod)</tt></dd></dl>
+
+<dl><dt><a name="Worker-customEvent"><strong>customEvent</strong></a>(...)</dt><dd><tt><a href="#Worker-customEvent">customEvent</a>(self,&nbsp;QEvent)</tt></dd></dl>
+
+<dl><dt><a name="Worker-deleteLater"><strong>deleteLater</strong></a>(...)</dt><dd><tt><a href="#Worker-deleteLater">deleteLater</a>(self)</tt></dd></dl>
+
+<strong>destroyed</strong> = &lt;unbound PYQT_SIGNAL destroyed(QObject*)&gt;
+<dl><dt><a name="Worker-disconnect"><strong>disconnect</strong></a>(...)</dt><dd><tt><a href="#Worker-disconnect">disconnect</a>(QMetaObject.Connection)&nbsp;-&gt;&nbsp;bool<br>
+<a href="#Worker-disconnect">disconnect</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Worker-disconnectNotify"><strong>disconnectNotify</strong></a>(...)</dt><dd><tt><a href="#Worker-disconnectNotify">disconnectNotify</a>(self,&nbsp;QMetaMethod)</tt></dd></dl>
+
+<dl><dt><a name="Worker-dumpObjectInfo"><strong>dumpObjectInfo</strong></a>(...)</dt><dd><tt><a href="#Worker-dumpObjectInfo">dumpObjectInfo</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Worker-dumpObjectTree"><strong>dumpObjectTree</strong></a>(...)</dt><dd><tt><a href="#Worker-dumpObjectTree">dumpObjectTree</a>(self)</tt></dd></dl>
+
+<dl><dt><a name="Worker-dynamicPropertyNames"><strong>dynamicPropertyNames</strong></a>(...)</dt><dd><tt><a href="#Worker-dynamicPropertyNames">dynamicPropertyNames</a>(self)&nbsp;-&gt;&nbsp;List[QByteArray]</tt></dd></dl>
+
+<dl><dt><a name="Worker-event"><strong>event</strong></a>(...)</dt><dd><tt><a href="#Worker-event">event</a>(self,&nbsp;QEvent)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Worker-eventFilter"><strong>eventFilter</strong></a>(...)</dt><dd><tt><a href="#Worker-eventFilter">eventFilter</a>(self,&nbsp;<a href="PyQt5.QtCore.html#QObject">QObject</a>,&nbsp;QEvent)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Worker-findChild"><strong>findChild</strong></a>(...)</dt><dd><tt><a href="#Worker-findChild">findChild</a>(self,&nbsp;type,&nbsp;name:&nbsp;str&nbsp;=&nbsp;'',&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtCore.html#QObject">QObject</a><br>
+<a href="#Worker-findChild">findChild</a>(self,&nbsp;Tuple,&nbsp;name:&nbsp;str&nbsp;=&nbsp;'',&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtCore.html#QObject">QObject</a></tt></dd></dl>
+
+<dl><dt><a name="Worker-findChildren"><strong>findChildren</strong></a>(...)</dt><dd><tt><a href="#Worker-findChildren">findChildren</a>(self,&nbsp;type,&nbsp;name:&nbsp;str&nbsp;=&nbsp;'',&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[<a href="PyQt5.QtCore.html#QObject">QObject</a>]<br>
+<a href="#Worker-findChildren">findChildren</a>(self,&nbsp;Tuple,&nbsp;name:&nbsp;str&nbsp;=&nbsp;'',&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[<a href="PyQt5.QtCore.html#QObject">QObject</a>]<br>
+<a href="#Worker-findChildren">findChildren</a>(self,&nbsp;type,&nbsp;QRegExp,&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[<a href="PyQt5.QtCore.html#QObject">QObject</a>]<br>
+<a href="#Worker-findChildren">findChildren</a>(self,&nbsp;Tuple,&nbsp;QRegExp,&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[<a href="PyQt5.QtCore.html#QObject">QObject</a>]<br>
+<a href="#Worker-findChildren">findChildren</a>(self,&nbsp;type,&nbsp;QRegularExpression,&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[<a href="PyQt5.QtCore.html#QObject">QObject</a>]<br>
+<a href="#Worker-findChildren">findChildren</a>(self,&nbsp;Tuple,&nbsp;QRegularExpression,&nbsp;options:&nbsp;Union[Qt.FindChildOptions,&nbsp;Qt.FindChildOption]&nbsp;=&nbsp;Qt.FindChildrenRecursively)&nbsp;-&gt;&nbsp;List[<a href="PyQt5.QtCore.html#QObject">QObject</a>]</tt></dd></dl>
+
+<dl><dt><a name="Worker-inherits"><strong>inherits</strong></a>(...)</dt><dd><tt><a href="#Worker-inherits">inherits</a>(self,&nbsp;str)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Worker-installEventFilter"><strong>installEventFilter</strong></a>(...)</dt><dd><tt><a href="#Worker-installEventFilter">installEventFilter</a>(self,&nbsp;<a href="PyQt5.QtCore.html#QObject">QObject</a>)</tt></dd></dl>
+
+<dl><dt><a name="Worker-isSignalConnected"><strong>isSignalConnected</strong></a>(...)</dt><dd><tt><a href="#Worker-isSignalConnected">isSignalConnected</a>(self,&nbsp;QMetaMethod)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Worker-isWidgetType"><strong>isWidgetType</strong></a>(...)</dt><dd><tt><a href="#Worker-isWidgetType">isWidgetType</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Worker-isWindowType"><strong>isWindowType</strong></a>(...)</dt><dd><tt><a href="#Worker-isWindowType">isWindowType</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Worker-killTimer"><strong>killTimer</strong></a>(...)</dt><dd><tt><a href="#Worker-killTimer">killTimer</a>(self,&nbsp;int)</tt></dd></dl>
+
+<dl><dt><a name="Worker-metaObject"><strong>metaObject</strong></a>(...)</dt><dd><tt><a href="#Worker-metaObject">metaObject</a>(self)&nbsp;-&gt;&nbsp;QMetaObject</tt></dd></dl>
+
+<dl><dt><a name="Worker-moveToThread"><strong>moveToThread</strong></a>(...)</dt><dd><tt><a href="#Worker-moveToThread">moveToThread</a>(self,&nbsp;QThread)</tt></dd></dl>
+
+<dl><dt><a name="Worker-objectName"><strong>objectName</strong></a>(...)</dt><dd><tt><a href="#Worker-objectName">objectName</a>(self)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<strong>objectNameChanged</strong> = &lt;unbound PYQT_SIGNAL objectNameChanged(QString)&gt;
+<dl><dt><a name="Worker-parent"><strong>parent</strong></a>(...)</dt><dd><tt><a href="#Worker-parent">parent</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtCore.html#QObject">QObject</a></tt></dd></dl>
+
+<dl><dt><a name="Worker-property"><strong>property</strong></a>(...)</dt><dd><tt><a href="#Worker-property">property</a>(self,&nbsp;str)&nbsp;-&gt;&nbsp;Any</tt></dd></dl>
+
+<dl><dt><a name="Worker-pyqtConfigure"><strong>pyqtConfigure</strong></a>(...)</dt><dd><tt><a href="PyQt5.QtCore.html#QObject">QObject</a>.<a href="#Worker-pyqtConfigure">pyqtConfigure</a>(...)<br>
+&nbsp;<br>
+Each&nbsp;keyword&nbsp;argument&nbsp;is&nbsp;either&nbsp;the&nbsp;name&nbsp;of&nbsp;a&nbsp;Qt&nbsp;property&nbsp;or&nbsp;a&nbsp;Qt&nbsp;signal.<br>
+For&nbsp;properties&nbsp;the&nbsp;property&nbsp;is&nbsp;set&nbsp;to&nbsp;the&nbsp;given&nbsp;value&nbsp;which&nbsp;should&nbsp;be&nbsp;of&nbsp;an<br>
+appropriate&nbsp;type.<br>
+For&nbsp;signals&nbsp;the&nbsp;signal&nbsp;is&nbsp;connected&nbsp;to&nbsp;the&nbsp;given&nbsp;value&nbsp;which&nbsp;should&nbsp;be&nbsp;a<br>
+callable.</tt></dd></dl>
+
+<dl><dt><a name="Worker-receivers"><strong>receivers</strong></a>(...)</dt><dd><tt><a href="#Worker-receivers">receivers</a>(self,&nbsp;PYQT_SIGNAL)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Worker-removeEventFilter"><strong>removeEventFilter</strong></a>(...)</dt><dd><tt><a href="#Worker-removeEventFilter">removeEventFilter</a>(self,&nbsp;<a href="PyQt5.QtCore.html#QObject">QObject</a>)</tt></dd></dl>
+
+<dl><dt><a name="Worker-sender"><strong>sender</strong></a>(...)</dt><dd><tt><a href="#Worker-sender">sender</a>(self)&nbsp;-&gt;&nbsp;<a href="PyQt5.QtCore.html#QObject">QObject</a></tt></dd></dl>
+
+<dl><dt><a name="Worker-senderSignalIndex"><strong>senderSignalIndex</strong></a>(...)</dt><dd><tt><a href="#Worker-senderSignalIndex">senderSignalIndex</a>(self)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Worker-setObjectName"><strong>setObjectName</strong></a>(...)</dt><dd><tt><a href="#Worker-setObjectName">setObjectName</a>(self,&nbsp;str)</tt></dd></dl>
+
+<dl><dt><a name="Worker-setParent"><strong>setParent</strong></a>(...)</dt><dd><tt><a href="#Worker-setParent">setParent</a>(self,&nbsp;<a href="PyQt5.QtCore.html#QObject">QObject</a>)</tt></dd></dl>
+
+<dl><dt><a name="Worker-setProperty"><strong>setProperty</strong></a>(...)</dt><dd><tt><a href="#Worker-setProperty">setProperty</a>(self,&nbsp;str,&nbsp;Any)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Worker-signalsBlocked"><strong>signalsBlocked</strong></a>(...)</dt><dd><tt><a href="#Worker-signalsBlocked">signalsBlocked</a>(self)&nbsp;-&gt;&nbsp;bool</tt></dd></dl>
+
+<dl><dt><a name="Worker-startTimer"><strong>startTimer</strong></a>(...)</dt><dd><tt><a href="#Worker-startTimer">startTimer</a>(self,&nbsp;int,&nbsp;timerType:&nbsp;Qt.TimerType&nbsp;=&nbsp;Qt.CoarseTimer)&nbsp;-&gt;&nbsp;int</tt></dd></dl>
+
+<dl><dt><a name="Worker-thread"><strong>thread</strong></a>(...)</dt><dd><tt><a href="#Worker-thread">thread</a>(self)&nbsp;-&gt;&nbsp;QThread</tt></dd></dl>
+
+<dl><dt><a name="Worker-timerEvent"><strong>timerEvent</strong></a>(...)</dt><dd><tt><a href="#Worker-timerEvent">timerEvent</a>(self,&nbsp;QTimerEvent)</tt></dd></dl>
+
+<dl><dt><a name="Worker-tr"><strong>tr</strong></a>(...)</dt><dd><tt><a href="#Worker-tr">tr</a>(self,&nbsp;str,&nbsp;disambiguation:&nbsp;str&nbsp;=&nbsp;None,&nbsp;n:&nbsp;int&nbsp;=&nbsp;-1)&nbsp;-&gt;&nbsp;str</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a>:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="PyQt5.QtCore.html#QObject">PyQt5.QtCore.QObject</a>:<br>
+<dl><dt><strong>staticMetaObject</strong> = &lt;PyQt5.QtCore.QMetaObject object&gt;</dl>
+
+<hr>
+Static methods inherited from <a href="PyQt5.sip.html#simplewrapper">sip.simplewrapper</a>:<br>
+<dl><dt><a name="Worker-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="PyQt5.sip.html#wrappertype">sip.wrappertype</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="PyQt5.sip.html#simplewrapper">sip.simplewrapper</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>cbb_index</strong> = 0</td></tr></table>
+</body></html>
