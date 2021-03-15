@@ -9,14 +9,23 @@ import bot
 
 cbb_index = 0
 class Gui(QWidget):
+    """Build gui
+
+    Args:
+        QWidget ([qwidget]): [PyQt5]
+    """
 
     stop_signal = pyqtSignal()  # make a stop signal to communicate with the worker in another thread
 
     def __init__(self):
+        """creating summary for __init__
+        """
         super().__init__()
         self.initUI()
 
     def initUI(self):
+        """creating summary for initUI
+        """
         # Background
         self.setWindowIcon(QtGui.QIcon("bot.ico"))
         self.setFixedSize(800, 600)
@@ -50,14 +59,7 @@ class Gui(QWidget):
         self.label_1 = QLabel(info, self)
         self.label_1.move(285, 550)
         self.label_1.setStyleSheet("solid black;")
-
-        # GUI title, size, etc...
-        #self.setGeometry(300, 300, 300, 220)
         self.setWindowTitle('Bot')
-        #self.layout = QGridLayout()
-        # self.layout.addWidget(self.btn_start, 0, 0)
-        # self.layout.addWidget(self.btn_stop, 0, 50)
-        # self.setLayout(self.layout)
 
         # Thread:
         self.thread = QThread()
@@ -77,20 +79,30 @@ class Gui(QWidget):
 
     # When stop_btn is clicked this runs. Terminates the worker and the thread.
     def stop_thread(self):
+        """Stop threading
+        """
         self.stop_signal.emit()  # emit the finished signal on stop
 
     def on_combobox_changed(self):
+        """event for on_combobox_changed
+        """
         global cbb_index
         cbb_index = self.combo_box.currentIndex()
 
 class Worker(QObject):
+    """Operation of threading
 
+    Args:
+        QObject ([QtCore]): [PyQt5.QtCore]
+    """
     finished = pyqtSignal()  # give worker class a finished signal
 
     def __init__(self, parent=None):
         QObject.__init__(self, parent=parent)
 
     def do_work(self):
+        """Get index from combobox then passing to function bot()
+        """
         global cbb_index
         bot.bot(cbb_index)
 
@@ -98,6 +110,8 @@ class Worker(QObject):
         QCoreApplication.quit()
 
     def stop(self):
+        """Stop running
+        """
         bot.run = False  # set the run condition to false on stop
         QCoreApplication.quit()
 

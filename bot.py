@@ -24,8 +24,17 @@ import utils
 now = datetime.datetime.now()
 data_json = None
 logging.basicConfig(filename='output_log.log', encoding='utf-8', level=logging.DEBUG, format='%(asctime)s %(message)s')
-# Say greetings depending time in day
+
+
 def greeting(lang):
+	"""Say greetings depending time in day
+
+	Args:
+		lang ([string]): [natural language]
+		'en' : english
+		'vi' : vietnamese
+		'ja' : japanese
+	"""
 	hour = int(datetime.datetime.now().hour)
 	if hour>= 0 and hour<12:
 		utils.speak(data_json["TLA_BOT_MORNING"], lang)
@@ -35,8 +44,16 @@ def greeting(lang):
 		utils.speak(data_json["TLA_BOT_EVENING"], lang)
 	utils.speak(data_json["TLA_BOT_ASK_FOR_HELP"], lang)
 
-# Looking for information in Wiki
 def find_in_wiki(query, lang):
+	"""Looking for information in Wikipedia
+
+	Args:
+		query ([string]): [The keyword which will be used for searching in Wikipedia]
+		lang ([string]): [natural language]
+		'en' : english
+		'vi' : vietnamese
+		'ja' : japanese
+	"""
 	utils.speak(data_json["TLA_BOT_WIKI_FINDING"], lang)
 	query = query.replace(data_json["TLA_WHO"], const.TLA_OUTPUT_EMPTY_STR)
 	query = query.replace(data_json["TLA_WHAT"], const.TLA_OUTPUT_EMPTY_STR)
@@ -57,9 +74,15 @@ def find_in_wiki(query, lang):
 		logging.error(err_wiki)
 		utils.speak(results, lang)
 
-
-# Play music using Youtube
 def play_music(lang):
+	"""Play music on Youtube
+
+	Args:
+		lang ([string]): [natural language]
+		'en' : english
+		'vi' : vietnamese
+		'ja' : japanese		
+	"""
 	utils.speak(data_json["TLA_BOT_ASK_MUSIC_NAME"], lang)
 	ans = utils.hear(lang)
 	#print(const.TLA_YOU_RESP + ans)
@@ -78,8 +101,16 @@ def play_music(lang):
 		logging.error(result)
 		utils.speak(result, lang)
 
-# Looking for information on Google
 def googling(query, lang):
+	"""Looking for information on Google
+
+	Args:
+		query ([string]): [The keyword which will be used for searching in Google]
+		lang ([string]): [natural language]
+		'en' : english
+		'vi' : vietnamese
+		'ja' : japanese			
+	"""
 	query = query.replace(data_json["TLA_LOOKING_FOR"], const.TLA_OUTPUT_EMPTY_STR)
 	utils.speak(data_json["TLA_BOT_GOOGLE_SEARCHING"], lang)
 	#driver = webdriver.Chrome()
@@ -97,8 +128,15 @@ def googling(query, lang):
 		logging.error(result)
 		utils.speak(result, lang)		
 
-# Response relating health
 def resp_heal(lang):
+	"""Response relating health
+
+	Args:
+		lang ([string]): [natural language]
+		'en' : english
+		'vi' : vietnamese
+		'ja' : japanese			
+	"""
 	utils.speak(data_json["TLA_BOT_RESP_HEALTH"], lang)
 	ans = utils.hear(lang)
 	print(const.TLA_YOU_RESP + ans)
@@ -108,53 +146,83 @@ def resp_heal(lang):
 	else:
 		utils.speak(data_json["TLA_YOU_RESP_HEALTH_BAD"], lang)
 
-# Show date time
 def show_date_time(query, lang):
+	"""Show date time
+
+	Args:
+		query ([string]): [The sentence which including 'time' or 'date']
+		lang ([string]): [natural language]
+		'en' : english
+		'vi' : vietnamese
+		'ja' : japanese			
+	"""
 	if data_json["TLA_TIME"] in query:
 		utils.speak(data_json["TLA_BOT_RESP_TIME"] % (now.hour, now.minute), lang)
 	elif data_json["TLA_DATE"] in query:
 		utils.speak(data_json["TLA_BOT_RESP_DATE"].format(day=now.day, month=now.month, year=now.year), lang)
 
-# Lock PC
 def lock_pc(lang):
+	"""Lock PC
+
+	Args:
+		lang ([string]): [natural language]
+		'en' : english
+		'vi' : vietnamese
+		'ja' : japanese	
+	"""
 	utils.speak(data_json["TLA_BOT_LOCK_PC"], lang)
 	ctypes.windll.user32.LockWorkStation()
 
-# Show weather
 def show_weather(lang):
-			utils.speak(data_json["TLA_WEATHER_CITY"], lang)
-			city = utils.hear(lang)
-			print(city)
-			logging.info(city)
-			try:
-				call_url = const.TLA_WEATHER_URL \
-							+ const.TLA_WEATHER_API_ID \
-							+ setting.TLA_API_KEY_WEATHER \
-							+ const.TLA_WEATHER_Q \
-							+ city \
-							+ const.TLA_WEATHER_UNIT
-				resp = requests.get(call_url)
-				data_weather = resp.json()
-				if data_weather[const.TLA_WEATHER_CODE] != const.TLA_WEATHER_404:
-					nhietDo = data_weather[const.TLA_WEATHER_MAIN][const.TLA_WEATHER_TEMP]
-					doAm = data_weather[const.TLA_WEATHER_MAIN][const.TLA_WEATHER_HUMIDITY]
-					moTa = data_weather[const.TLA_WEATHER_WEATHER][0][const.TLA_WEATHER_DESCRIPTION]
-					moTa = utils.translate(moTa, lang)
-					content = data_json["TLA_WEATHER_MSG"].format(query=city, temp=nhietDo, humidity=doAm, description=moTa)
-					print(content)
-					logging.info(content)
-					utils.speak(content, lang)
-				else:
-					content = data_json["TLA_WEATHER_NOT_FOUND"]
-					logging.error(content)
-					utils.speak(content, lang)
-			except :
-				content = data_json["TLA_WEATHER_NOT_FOUND"]
-				logging.error(content)
-				utils.speak(content, lang)
+	"""Show weather
 
-# Shutdown PC
+	Args:
+		lang ([string]): [natural language]
+		'en' : english
+		'vi' : vietnamese
+		'ja' : japanese	
+	"""
+	utils.speak(data_json["TLA_WEATHER_CITY"], lang)
+	city = utils.hear(lang)
+	print(city)
+	logging.info(city)
+	try:
+		call_url = const.TLA_WEATHER_URL \
+					+ const.TLA_WEATHER_API_ID \
+					+ setting.TLA_API_KEY_WEATHER \
+					+ const.TLA_WEATHER_Q \
+					+ city \
+					+ const.TLA_WEATHER_UNIT
+		resp = requests.get(call_url)
+		data_weather = resp.json()
+		if data_weather[const.TLA_WEATHER_CODE] != const.TLA_WEATHER_404:
+			nhietDo = data_weather[const.TLA_WEATHER_MAIN][const.TLA_WEATHER_TEMP]
+			doAm = data_weather[const.TLA_WEATHER_MAIN][const.TLA_WEATHER_HUMIDITY]
+			moTa = data_weather[const.TLA_WEATHER_WEATHER][0][const.TLA_WEATHER_DESCRIPTION]
+			moTa = utils.translate(moTa, lang)
+			content = data_json["TLA_WEATHER_MSG"].format(query=city, temp=nhietDo, humidity=doAm, description=moTa)
+			print(content)
+			logging.info(content)
+			utils.speak(content, lang)
+		else:
+			content = data_json["TLA_WEATHER_NOT_FOUND"]
+			logging.error(content)
+			utils.speak(content, lang)
+	except :
+		content = data_json["TLA_WEATHER_NOT_FOUND"]
+		logging.error(content)
+		utils.speak(content, lang)
+
+
 def shutdown_pc(lang):
+	"""Shutdown PC
+
+	Args:
+		lang ([string]): [natural language]
+		'en' : english
+		'vi' : vietnamese
+		'ja' : japanese	
+	"""
 	utils.speak(data_json["TLA_CONFIRM_SHUTDOWN_PC"], lang)
 	confirm = utils.hear(lang)
 	if data_json["TLA_YOU_CONFIRM1"] in confirm \
@@ -163,8 +231,15 @@ def shutdown_pc(lang):
 		utils.speak(data_json["TLA_BOT_SHUTDOWN_PC"], lang)
 		os.system(const.TLA_SHUTDOWN_PC_BY_SECONDS)
 
-# Write something
 def write_sth(lang):
+	"""Write something
+
+	Args:
+		lang ([string]): [natural language]
+		'en' : english
+		'vi' : vietnamese
+		'ja' : japanese	
+	"""
 	utils.speak(data_json["TLA_ASK_WRITE"], lang)
 	note = utils.hear(lang)
 	try:
@@ -182,6 +257,17 @@ def write_sth(lang):
 		logging.error(err_write)
 
 def get_lang(ix):
+	"""Get lang and choose json file depending choson lang
+
+	Args:
+		ix ([integer]): [index of natural lang]
+		'en' : 0
+		'vi' : 2
+		'ja' : 1		
+
+	Returns:
+		[string]: [natural lang]
+	"""
 	lang = None
 	if ix == 0:
 		lang = setting.TLA_ENG
@@ -196,8 +282,12 @@ def get_lang(ix):
 
 	return lang
 
-# Bot
 def bot(ix=0):
+	"""Bot actions
+
+	Args:
+		ix (int, optional): [0: english,  1: japanese,  2: vietnamese]. Defaults is english(index = 0)
+	"""
 	utils.clear_promp()
 	lang = get_lang(ix)
 
